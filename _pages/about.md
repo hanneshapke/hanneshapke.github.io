@@ -22,6 +22,7 @@ More to come ...
 
 Most recent talk
 
-<p><iframe src="https://www.youtube.com/watch?v=hP7gm_f7oCk" width="640" height="360" frameborder="0" allowfullscreen></iframe></p>
+
+<p><iframe width="640" height="360" src="https://www.youtube.com/embed/hP7gm_f7oCk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 
 More to come ...
