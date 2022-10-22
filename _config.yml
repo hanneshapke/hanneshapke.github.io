@@ -1,6 +1,6 @@
 #-------------------------------
 # Site Settings
-title: Menca
+title: Hannes
 logo: # You can add own logo. For example '/images/logo.png'.
 description: Blog about ML, MLOps, and random other things
 baseurl: "" # the subpath of your site, e.g. /blog

@@ -8,11 +8,11 @@ tags:   [machine learning, mlops, startups]
 ---
 I find myself revisiting highly interestign Twitter threads. Here is a list of the most interesting threads sorted by topics ...
 
-![Machine Learning]({{site.baseurl}}/images/15-2.jpg#wide)
+![Machine Learning]({{site.baseurl}}/images/alina-grubnyak-ZiQkhI7417A-unsplash.jpg#wide)
 *Photo by [Alina Grubnyak](https://unsplash.com/photos/ZiQkhI7417A) on [Unsplash](https://unsplash.com/)*
 
 
-### Machine Learning
+## Machine Learning
 [Critical ML topics for the coming 3-4 years by @soniajoseph_](https://twitter.com/soniajoseph_/status/1583184692282478592)
 The replies to the thread question are rich and insight full.
 
@@ -28,8 +28,12 @@ Great thread about embedding and the hidden complexity.
 
 [A thread about real time ML by @mlopscommunity](https://twitter.com/mlopscommunity/status/1563162922247139332)
 
-![Startups]({{site.baseurl}}/images/15-1.jpg#wide)
-*Photo by [Israel Andrade](https://unsplash.com/photos/YI_9SivVt_s) on [Unsplash](https://unsplash.com/)*
+<!-- ![Startups]({{site.baseurl}}/images/15-1.jpg#wide)
+*Photo by [Israel Andrade](https://unsplash.com/photos/YI_9SivVt_s) on [Unsplash](https://unsplash.com/)* -->
 
-### Startups
+## MLOps
+Great thread by [@GoAbiAryan](https://twitter.com/GoAbiAryan/) on papers around ML system designs.
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">This has been such an excellent year for software system design in ML. So, I compiled a list of some of my favorite papers 📜in MLOps. <br><br>Here are some of my favorite ones till date⤵️</p>&mdash; Abi Aryan (@GoAbiAryan) <a href="https://twitter.com/GoAbiAryan/status/1580852750526468097?ref_src=twsrc%5Etfw">October 14, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+## Startups
 [Advice on  good pitch decks by @wallstreetpaper](https://twitter.com/wallstreetpaper/status/1582884312604504064)
