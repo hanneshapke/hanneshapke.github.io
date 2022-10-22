@@ -30,7 +30,7 @@ social:
 # Hero Settings
 hero:
   hero__title: Hey, I’m Hannes.
-  hero__description: Talks, and writes about Machine Learning, MLOps, and Natural Language Processing. I share thoughts, wins and failures.
+  hero__description: Product-focused machine learning engineer. Talks, and writes about Machine Learning, MLOps, and Natural Language Processing. I share thoughts, wins and failures.
   hero__image: '/images/01.jpg'
 
 
