@@ -2,7 +2,7 @@
 # Site Settings
 title: Hannes
 logo: # You can add own logo. For example '/images/logo.png'.
-description: Blog about ML, MLOps, and random other things
+description: Product-focused machine learning engineer. Writes about ML, MLOps, and random other things
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "hanneshapke.com" # the base hostname & protocol for your site, e.g. http://example.com
 color_scheme: auto # You can choose three modes auto, light, and dark. By default, the auto mode is set, which means the user can choose the light or dark mode themself.
@@ -12,7 +12,7 @@ color_scheme: auto # You can choose three modes auto, light, and dark. By defaul
 # Author Settings
 author:
   author__name: Hannes Hapke
-  author__bio: Talks, and writes about Machine Learning, MLOps, and Natural Language Processing. I share thoughts, wins and failures.
+  author__bio: Product-focused machine learning engineer. Talks, and writes about Machine Learning, MLOps, and Natural Language Processing. I share thoughts, wins and failures.
   author__avatar: '/images/01-1.jpg'
 
 social:
