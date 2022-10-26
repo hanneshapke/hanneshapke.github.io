@@ -14,7 +14,7 @@ I find myself revisiting highly interestign Twitter threads. Here is a list of t
 
 # Machine Learning
 
-Critical ML topics for the coming 3-4 years by [@soniajoseph_](https://twitter.com/soniajoseph_/). The replies to the thread question are rich and insight full.
+Critical ML topics for the coming 3-4 years by [@soniajoseph_](https://twitter.com/soniajoseph_/). The replies to the thread are insightful.
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">machine learning twitter-- <br><br>ML is moving fast. Which research ideas / PhD topics will remain critical 3-4 years from now?</p>&mdash; Sonia Joseph (@soniajoseph_) <a href="https://twitter.com/soniajoseph_/status/1583184692282478592?ref_src=twsrc%5Etfw">October 20, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 [@ericmander](https://twitter.com/ericmander/) on "Foundation models are the new public cloud and AI is the new SaaS"
