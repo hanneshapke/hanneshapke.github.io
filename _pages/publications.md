@@ -2,7 +2,7 @@
 layout: page
 title: Publications
 permalink: /publications/
-image: '/images/05-1.jpg'
+image: '/images/ml_books.jpg'
 ---
 
 A list of my machine learning related publications
