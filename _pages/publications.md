@@ -7,9 +7,7 @@ image: '/images/05-1.jpg'
 
 A list of my machine learning related publications
 
-***
-
-## Books 📚
+## Machine Learning Books 📚
 
 I had the unique opportunity to co-author two machine learning books. More to come ...
 
@@ -34,7 +32,7 @@ Overall, Building Machine Learning Pipelines is an invaluable resource for anyon
 
 ![NLP in Action book cover](/images/NLP_in_Action.jpeg)
 
-**"Natural Language Processing (NLP) in Action"** is a comprehensive guide to the exciting field of natural language processing. In this book, we took a dive deep into the fundamentals of NLP and explore the techniques and tools used in the industry.
+**"Natural Language Processing (NLP) in Action"** is a comprehensive guide to the exciting field of natural language processing written in 2017. In this book, we took a dive deep into the fundamentals of NLP and explore the techniques and tools used in the industry.
 
 First, we will cover the basics of NLP, including statistical methods such as bag of words and n-grams. These techniques allow us to extract meaningful information from large amounts of text data and are an essential foundation for many NLP tasks.
 
@@ -48,11 +46,23 @@ Finally, we will discuss the training of models on GPUs, which allows us to trai
 
 By the end of this book, you will have a solid understanding of NLP and the tools and techniques used to build real-world NLP systems. Whether you are a beginner looking to get started in NLP or an experienced practitioner looking to deepen your knowledge, this book is for you. By understanding the details of NLP and neural networks, it will make you appreciate transformers even more.
 
-***
-
 ## Blog Posts
+
+### 2022
+
+How Startups can benefit from TensorFlow Extended (TFX). The post introduces three core benefits: Standardization, Growth, and Reproducibility & Repeatability
+* [How startups can benefit from TFX](https://blog.tensorflow.org/2022/10/how-startups-can-benefit-from-tfx.html)
+
+Google's Matching Engine
+* [Review of the Google Cloud Real-time Matching Engine (review contribution)](https://cloud.google.com/blog/products/ai-machine-learning/real-time-ai-with-google-cloud-vertex-ai)
+
+### 2021
+
+How to train custom named-entity models with Transformers
+* [Training and Deploying State of the Art Transformer Models at Digits](https://developer.digits.com/2021/09/15/training-and-deploying-state-of-the-art-transformer-models-at-digits/)
 
 ### 2020
 
+Introduction to NLP with TensorFlow and TensorFlow Extended (TFX) before HuggingFace was a thing.
 * [Google's TensorFlow Blog: Part 1: Fast, scalable and accurate NLP: Why TFX is a perfect match for deploying BERT](https://blog.tensorflow.org/2020/03/part-1-fast-scalable-and-accurate-nlp-tensorflow-deploying-bert.html)
 * [Google's TensorFlow Blog: Part 2: Fast, scalable and accurate NLP: Why TFX is a perfect match for deploying BERT](https://blog.tensorflow.org/2020/06/part-2-fast-scalable-and-accurate-nlp.html)
