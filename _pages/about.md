@@ -2,7 +2,7 @@
 layout: page
 title: About
 permalink: /about/
-image: '/images/01-2.jpg'
+image: '/images/Google_talk_hannes.jpeg'
 ---
 
 Hi, I am Hannes, an **experienced, product-focused machine learning engineer** and **author** with a passion for building machine learning (ML) models and improving ML pipelines. I was Digits' first ML engineer and laid the ground work for a number of machine projects ranging from similarity machine learning to custom generative AI. Very excited to work with such an amazing team of colleagues. In my work, I focus on several key areas, including **similarity learning, machine learning for search, MLOps, and continuous model training**.

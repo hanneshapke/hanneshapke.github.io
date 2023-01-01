@@ -2,7 +2,7 @@
 layout: page
 title: Talks
 permalink: /talks/
-image: '/images/06.jpg'
+image: '/images/01-2.jpg'
 ---
 
 ## Upcoming Talks
