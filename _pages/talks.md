@@ -9,9 +9,9 @@ image: '/images/06.jpg'
 
 * No scheduled talks
 
-## Past Talks
-
 ***
+
+## Past Talks
 
 ## 2022
 
@@ -27,24 +27,16 @@ image: '/images/06.jpg'
 
 * 12/05/2022: MLOps Meetup Belgium
 
-***
+<!-- ## 2021
 
-## 2021
-
-***
 
 ## 2020
 
-***
 
 ## 2019
 
-***
 
 ## 2018
 
-***
 
-## 2017
-
-***
+## 2017 -->
