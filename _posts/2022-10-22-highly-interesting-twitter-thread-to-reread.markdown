@@ -2,7 +2,7 @@
 layout: post
 title:  Highly interesting Twitter threads to revisit from time to time
 description: I find myself revisiting highly interestign Twitter threads. Here is a list of the most interesting threads sorted by topics ...
-date:   2020-10-22 15:01:35 -0700
+date:   2022-10-22 15:01:35 -0700
 image:  '/images/15.jpg'
 tags:   [machine learning, mlops, startups]
 ---
