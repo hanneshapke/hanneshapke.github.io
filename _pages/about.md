@@ -25,10 +25,9 @@ I am **passionate about using machine learning to solve real-world problems**, a
   <em>Gallery</em>
 </div>
 
-### Machine Learning
+### What you can find on this site
 
-Most recent talk
+* [List of Co-Authored Machine Learning Books](http://www.hanneshapke.com/books/)
+* [List of Machine Learning Publications](http://www.hanneshapke.com/publications/)
+* [List of 40+ machine learning related talks](http://www.hanneshapke.com/talks/)
 
-<p><iframe width="640" height="360" src="https://www.youtube.com/embed/hP7gm_f7oCk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
-
-More to come ...
