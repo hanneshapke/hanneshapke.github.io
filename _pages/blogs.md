@@ -29,12 +29,12 @@ Digits Blog: How to train custom named-entity models with Transformers
 
 TensorFlow Blog: Introduction to NLP with TensorFlow and TensorFlow Extended (TFX) before HuggingFace was a thing.
 * [Google's TensorFlow Blog: Part 1: Fast, scalable and accurate NLP: Why TFX is a perfect match for deploying BERT](https://blog.tensorflow.org/2020/03/part-1-fast-scalable-and-accurate-nlp-tensorflow-deploying-bert.html)
-![TensorFlow Blog: Part 1: Fast, scalable and accurate NLP: Why TFX is a perfect match for deploying BERT link](images/publications_Bert_TFX_1.png)
+![TensorFlow Blog: Part 1: Fast, scalable and accurate NLP: Why TFX is a perfect match for deploying BERT link](/images/publications_Bert_TFX_1.png)
 
 * [Google's TensorFlow Blog: Part 2: Fast, scalable and accurate NLP: Why TFX is a perfect match for deploying BERT](https://blog.tensorflow.org/2020/06/part-2-fast-scalable-and-accurate-nlp.html)
-![TensorFlow Blog: Part 2: Fast, scalable and accurate NLP: Why TFX is a perfect match for deploying BERT link](images/publications_Bert_TFX_2.png)
+![TensorFlow Blog: Part 2: Fast, scalable and accurate NLP: Why TFX is a perfect match for deploying BERT link](/images/publications_Bert_TFX_2.png)
 
 ### 2019
 
 * [Google Cloud's Blog - Empower your AI Platform-trained serverless endpoints with machine learning on Google Cloud Functions](https://cloud.google.com/blog/products/ai-machine-learning/empower-your-ai-platform-trained-serverless-endpoints-with-machine-learning-on-google-cloud-functions)
-![Empower your AI Platform-trained serverless endpoints with machine learning on Google Cloud Functions](images/publications_google_cloud_functions.png)
+![Empower your AI Platform-trained serverless endpoints with machine learning on Google Cloud Functions](/images/publications_google_cloud_functions.png)

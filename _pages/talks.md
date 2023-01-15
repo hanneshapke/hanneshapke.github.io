@@ -74,7 +74,7 @@ image: '/images/01-2.jpg'
 <p><iframe width="560" height="315" src="https://www.youtube.com/embed/TqPohy-kheI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
 
 * September 22: SAP Predictive Summit (remote) - [Answer Questions with BERT](https://jam4.sapjam.com/groups/CkuMNbUxkAaKoGdicPvsjB/overview_page/PIgAJsXy1LQARRRcXubNAT)
-![SAP Predictive Summit](images/talks_sap_predictive_summit.png)
+![SAP Predictive Summit](/images/talks_sap_predictive_summit.png)
 
 * August 27: Apache Beam Summit (remote) - [Creating Custom TFX Components with Apache Beam](https://2020.beamsummit.org/sessions/writing-custom-components-tensorflow/)
 <p><iframe width="560" height="315" src="https://www.youtube.com/embed/_c-znj_cZvU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
@@ -83,7 +83,7 @@ image: '/images/01-2.jpg'
 <p><iframe width="560" height="315" src="https://www.youtube.com/embed/h0Kt-HQGtVc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
 
 * July 25: Google DevFest West Coast (remote) - ML Engineering with TensorFlow Extended
-![DevFest West Coast 2020](images/talks_devfestwestcoast2020.jpeg)
+![DevFest West Coast 2020](/images/talks_devfestwestcoast2020.jpeg)
 
 * May 13: Google's TensorFlow Meets (remote)
 <p><iframe width="560" height="315" src="https://www.youtube.com/embed/sOdOogq4W58" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
@@ -93,7 +93,7 @@ image: '/images/01-2.jpg'
 * November 9: DevFest (Berlin, Germany) - [Ease ML deployments with TensorFlow Serving](https://2019.devfest-berlin.de/schedule/2019-11-09?sessionId=1025)
 
 * October 30: TensorFlow World Conference (Santa Clara, CA) - [Advanced model deployments with TensorFlow Serving](https://www.oreilly.com/conferences/)
-![O'Reilly TensorFlow World Conference](images/talks_tensorflow_world.jpeg)
+![O'Reilly TensorFlow World Conference](/images/talks_tensorflow_world.jpeg)
 
 * October 19: ML Unconference (Portland, OR) - Deploying ML Models
 
@@ -107,10 +107,10 @@ image: '/images/01-2.jpg'
 * June 18: Portland Serverless Architecture Meetup (Portland, OR) - [Google Cloud Functions, Machine Learning, & the Model Server](https://www.meetup.com/login/?returnUri=https%3A%2F%2Fwww.meetup.com%2Fportland-serverless-architecture-meetup%2Fevents%2F260455775)
 
 * May 30: Google AI Huddle (Seattle, WA) - [Empower Google Cloud Functions with Machine Learning](https://www.meetup.com/login/?returnUri=https%3A%2F%2Fwww.meetup.com%2Fgoogle-ai-huddle-seattle%2Fevents%2F261512141)
-![Empower Google Cloud Functions with Machine Learning](images/talks_seattle_huddle.jpeg)
+![Empower Google Cloud Functions with Machine Learning](/images/talks_seattle_huddle.jpeg)
 
 * April 30: ML4All Conference (Portland, OR) - [MLOps for non-DevOps folks, a.k.a. “I have a model, now what?!](https://www.youtube.com/watch?v=_xH7mlDGb0c&list=PLOnHsSCrR68xBQITh2Sf9YjD_z26p0Kt0)
-![MLOps for non-DevOps folks, a.k.a. “I have a model, now what?!](images/talks_ML4all.jpeg)
+![MLOps for non-DevOps folks, a.k.a. “I have a model, now what?!](/images/talks_ML4all.jpeg)
 
 * March 28: Machine Learning Meetup (Portland, OR) - [TensorFlow Dev Summit Recap](https://www.meetup.com/login/?returnUri=https%3A%2F%2Fwww.meetup.com%2Fmlops-portland%2Fevents%2F259605753)
 
