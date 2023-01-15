@@ -9,47 +9,113 @@ image: '/images/01-2.jpg'
 
 * No scheduled talks
 
-***
-
 ## Past Talks
 
 ## 2022
 
-* 04/20/2022: ODSC East Conference - [Keep Your Friends Close, and Keep Your Vectors Closer – Using Similarity-based Machine Learning for FinTech Applications at Digits](https://odsc.com/speakers/keep-your-friends-close-and-keep-your-vectors-closer-using-similarity-based-machine-learning-for-fintech-applications-at-digits/) (Boston, MA, USA)
+* December 5: MLOps Meetup Belgium (remote) - Introduction to Similarity-based Machine Learning
 
-* 08/09/2022 - Google Cloud Tech Podcast - [Using machine learning to transform finance with Google Cloud and Digits](https://www.youtube.com/watch?v=zSK3YFTgHhg)
-<p><iframe width="560" height="315" src="https://www.youtube.com/embed/zSK3YFTgHhg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+* November 16: GDSC Chapter at Iowa State University (remote) - Talk about Production Machine Learning
 
-* 09/08/2002 - MLOps Community - [Scaling Similarity Learning at Digits](https://home.mlops.community/public/videos/scaling-similarity-learning-at-digits)
+* November 4: Google North America Connect Conference (Sunnyvale, CA) - Introduction to Similarity-based Machine Learning
+
+* November 3: Pacific Region DevFest 2022 (Mountain View, CA) - [Introduction to Similarity based Machine Learning](https://gdg.community.dev/events/details/google-gdg-san-francisco-presents-pacific-region-devfest-2022/)
+
+* September 8: MLOps Community (remote) - [Scaling Similarity Learning at Digits](https://home.mlops.community/public/videos/scaling-similarity-learning-at-digits)
 <p><iframe width="640" height="360" src="https://www.youtube.com/embed/hP7gm_f7oCk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 
-* 11/03/2022: [Pacific Region DevFest 2022](https://gdg.community.dev/events/details/google-gdg-san-francisco-presents-pacific-region-devfest-2022/) (Mountainview, CA, USA)
+* August 9: Google Cloud Tech Podcast (remote) - [Using machine learning to transform finance with Google Cloud and Digits](https://www.youtube.com/watch?v=zSK3YFTgHhg)
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/zSK3YFTgHhg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
 
-* 11/04/2022: Google North America Connect Conference (Sunnyvale, CA, USA)
-
-* 11/16/2022: GDSC Chapter at Iowa State University
-
-* 12/05/2022: MLOps Meetup Belgium
+* April 20: ODSC East Conference (Boston, MA) - [Keep Your Friends Close, and Keep Your Vectors Closer – Using Similarity-based Machine Learning for FinTech Applications at Digits](https://odsc.com/speakers/keep-your-friends-close-and-keep-your-vectors-closer-using-similarity-based-machine-learning-for-fintech-applications-at-digits/) (Boston, MA, USA)
 
 ## 2021
 
+* August 6: Apache Beam Summit 2021 (remote) - [Scalable Predictions of Deep Learning models with Apache Beam](https://www.youtube.com/watch?v=EjGAQt8tgr8)
+<p><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/EjGAQt8tgr8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+
+* July 13: Toronto Machine Learning Summit in Finance (remote) - Bringing structure into an unstructured world: Apply State of the Art Machine Learning at Digits
+
+* June 10: Google's Applied ML Summit 2021 (remote) - [Rapid Iteration with Limited DevOps Resources](https://www.youtube.com/watch?v=rKC6rMFbOqY)
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/rKC6rMFbOqY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+
+* June 1: Data Talk Club (remote) - Questions about TFX/MLOps
+
+* April 21: Columbus Data Science Conference (remote) - Machine Learning at Digits
+
+* April 15: Google's ML Practitioner Summit (remote) - Digits Financial at the ML Practitioner Summit
+
+* March 1: Delivery, Interrupted Podcast (remote) - [MLOps Part 2 - Continuous Delivery](https://open.spotify.com/episode/5V0lbNo0p3AsR3S47g2SRN)
+
+* February 27: Google's TensorFlow Everywhere Conference (remote) - [TensorFlow at Digits](https://youtu.be/ysZ9RMKsNLk?t=11672)
+
+* February 16: ML6 Conference (remote) - MLOps + Metadata
+
 ## 2020
 
-* 11/14/2020: PyData Global - [Responsible ML in Production](https://pydata.org/global2022/talks/275)
+* November 14: PyData Global Conference (remote) - [Responsible ML in Production](https://pydata.org/global2022/talks/275)
 
-* 11/14/2020: PyData Global - [QA Panel on Algorithmic Accountability](https://pydata.org/global2022/pages/qa_panels#acc-1)
+* November 14: PyData Global Conference (remote) - [QA Panel on Algorithmic Accountability](https://pydata.org/global2022/pages/qa_panels#acc-1)
 
-* 11/13/2020: Scale By The Bay 2020 - [Automate the boring ML stuff with pipelines](https://scalebythebay2020.sched.com/event/e55q)
+* November 13: Scale By The Bay 2020 (remote) - [Automate the boring ML stuff with pipelines](https://scalebythebay2020.sched.com/event/e55q)
 
-* 11/11/2020: Google MLOps Working Group - [How to write custom components for your TFX pipelines](https://drive.google.com/file/d/1w7wMgfaZwYdmk3qVUgZxrAjyGsoOXqhS/view?usp=sharing)
+* November 11: Google MLOps Working Group (remote) - [How to write custom components for your TFX pipelines](https://drive.google.com/file/d/1w7wMgfaZwYdmk3qVUgZxrAjyGsoOXqhS/view?usp=sharing)
 [example code](https://colab.research.google.com/gist/hanneshapke/9d3905873c123b1002d4acd5aa2be1f8/mlops-working-group-creating-custom-tfx-components.ipynb)
 
-* 10/30/2020: ODSC West [Build an ML pipeline for BERT models with TensorFlow Extended – An end-to-end Tutorial](https://odsc.com/speakers/build-an-ml-pipeline-for-a-bert-with-tensorflow-extended-an-end-to-end-tutorial/)
+* October 30: ODSC West (remote) - [Build an ML pipeline for BERT models with TensorFlow Extended – An end-to-end Tutorial](https://odsc.com/speakers/build-an-ml-pipeline-for-a-bert-with-tensorflow-extended-an-end-to-end-tutorial/)
+
+* October 22: Google ML Summit 2020 (remote) - [ML Pipelines and Metadata](https://events.withgoogle.com/google-developers-ml-summit/2020-agenda/)
+
+* October 22: Google ML Summit 2020 (remote) - [Panel Discussion about the State of ML](https://events.withgoogle.com/google-developers-ml-summit/2020-agenda/)
+
+* September 30: TensorFlow User Group London (remote) - [Managing ML Pipelines with TensorFlow Extended](https://www.meetup.com/login/?returnUri=https%3A%2F%2Fwww.meetup.com%2Ftensorflow-london%2Fevents%2F273116268)
+
+* September 29: Weights & Biases Salon (remote) - [Managing ML Pipelines in TensorFlow Extended with Hannes Hapke](https://www.youtube.com/watch?v=TqPohy-kheI)
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/TqPohy-kheI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+
+* September 22: SAP Predictive Summit (remote) - [Answer Questions with BERT](https://jam4.sapjam.com/groups/CkuMNbUxkAaKoGdicPvsjB/overview_page/PIgAJsXy1LQARRRcXubNAT)
+![SAP Predictive Summit](images/talks/sap_predictive_summit.png)
+
+* August 27: Apache Beam Summit (remote) - [Creating Custom TFX Components with Apache Beam](https://2020.beamsummit.org/sessions/writing-custom-components-tensorflow/)
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/_c-znj_cZvU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+
+* August 24: Apache Beam Summit (remote) - [MLOps with TensorFlow Extended and Apache Beam](https://2020.beamsummit.org/sessions/mlops-tensorflow-beam/)
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/h0Kt-HQGtVc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+
+* July 25: Google DevFest West Coast (remote) - ML Engineering with TensorFlow Extended
+![DevFest West Coast 2020](images/talks/devfestwestcoast2020.jpeg)
+
+* May 13: Google's TensorFlow Meets (remote)
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/sOdOogq4W58" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
 
 ## 2019
 
+* November 9: DevFest (Berlin, Germany) - [Ease ML deployments with TensorFlow Serving](https://2019.devfest-berlin.de/schedule/2019-11-09?sessionId=1025)
+
+* October 30: TensorFlow World Conference (Santa Clara, CA) - [Advanced model deployments with TensorFlow Serving](https://www.oreilly.com/conferences/)
+![O'Reilly TensorFlow World Conference](images/talks/tensorflow_world.jpeg)
+
+* October 19: ML Unconference (Portland, OR) - Deploying ML Models
+
+* October 19: ML Unconference (Portland, OR) - Introduction to Natural Language Processing
+
+* September 18: Google ML Summit (Seattle, WA) - [Ease ML deployments with TensorFlow Serving](https://events.withgoogle.com/ml-summit-19-seattle/agenda/)
+
+* August 28: Google ML Summit (Cambridge, MA) - [Ease ML deployments with TensorFlow Serving](https://www.youtube.com/watch?v=4mqFDwIdKh0)
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/4mqFDwIdKh0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+
+* June 18: Portland Serverless Architecture Meetup (Portland, OR) - [Google Cloud Functions, Machine Learning, & the Model Server](https://www.meetup.com/login/?returnUri=https%3A%2F%2Fwww.meetup.com%2Fportland-serverless-architecture-meetup%2Fevents%2F260455775)
+
+* May 30: Google AI Huddle (Seattle, WA) - [Empower Google Cloud Functions with Machine Learning](https://www.meetup.com/login/?returnUri=https%3A%2F%2Fwww.meetup.com%2Fgoogle-ai-huddle-seattle%2Fevents%2F261512141)
+![Empower Google Cloud Functions with Machine Learning](images/talks/seattle_huddle.jpeg)
+
+* April 30: ML4All Conference (Portland, OR) - [MLOps for non-DevOps folks, a.k.a. “I have a model, now what?!](https://www.youtube.com/watch?v=_xH7mlDGb0c&list=PLOnHsSCrR68xBQITh2Sf9YjD_z26p0Kt0)
+![MLOps for non-DevOps folks, a.k.a. “I have a model, now what?!](images/talks/ML4all.jpeg)
+
+* March 28: Machine Learning Meetup (Portland, OR) - [TensorFlow Dev Summit Recap](https://www.meetup.com/login/?returnUri=https%3A%2F%2Fwww.meetup.com%2Fmlops-portland%2Fevents%2F259605753)
 
 ## 2018
 
+* July 17: OSCON Tensorow Day 2018 (Portland, OR) - [Got a trained deep learning model? Now what? Deploying deep learning models](https://conferences.oreilly.com/oscon/oscon-or-2018/public/schedule/detail/71343.html)
+[Slides](https://conferences.oreilly.com/oscon/oscon-or-2018/cdn.oreillystatic.com/en/assets/1/event/274/Got%20a%20trained%20deep%20learning%20model_%20Now%20what_%20Deploying%20deep%20learning%20models%20Presentation.pdf)
 
-## 2017
