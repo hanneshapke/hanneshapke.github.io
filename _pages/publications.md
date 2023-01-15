@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Publications
-permalink: /publications/
+title: Books
+permalink: /books/
 image: '/images/ml_books_right.jpeg'
 ---
 
@@ -45,24 +45,3 @@ We will also explore the use of seq2seq networks, which are a type of neural net
 Finally, we will discuss the training of models on GPUs, which allows us to train large and complex models much faster than on traditional CPUs. This is particularly important in NLP, where the datasets can be very large and the models can be computationally intensive.
 
 By the end of this book, you will have a solid understanding of NLP and the tools and techniques used to build real-world NLP systems. Whether you are a beginner looking to get started in NLP or an experienced practitioner looking to deepen your knowledge, this book is for you. By understanding the details of NLP and neural networks, it will make you appreciate transformers even more.
-
-## Blog Posts
-
-### 2022
-
-How Startups can benefit from TensorFlow Extended (TFX). The post introduces three core benefits: Standardization, Growth, and Reproducibility & Repeatability
-* [How startups can benefit from TFX](https://blog.tensorflow.org/2022/10/how-startups-can-benefit-from-tfx.html)
-
-Google's Matching Engine
-* [Review of the Google Cloud Real-time Matching Engine (review contribution)](https://cloud.google.com/blog/products/ai-machine-learning/real-time-ai-with-google-cloud-vertex-ai)
-
-### 2021
-
-How to train custom named-entity models with Transformers
-* [Training and Deploying State of the Art Transformer Models at Digits](https://developer.digits.com/2021/09/15/training-and-deploying-state-of-the-art-transformer-models-at-digits/)
-
-### 2020
-
-Introduction to NLP with TensorFlow and TensorFlow Extended (TFX) before HuggingFace was a thing.
-* [Google's TensorFlow Blog: Part 1: Fast, scalable and accurate NLP: Why TFX is a perfect match for deploying BERT](https://blog.tensorflow.org/2020/03/part-1-fast-scalable-and-accurate-nlp-tensorflow-deploying-bert.html)
-* [Google's TensorFlow Blog: Part 2: Fast, scalable and accurate NLP: Why TFX is a perfect match for deploying BERT](https://blog.tensorflow.org/2020/06/part-2-fast-scalable-and-accurate-nlp.html)
