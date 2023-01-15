@@ -21,6 +21,9 @@ image: '/images/01-2.jpg'
 
 * November 3: Pacific Region DevFest 2022 (Mountain View, CA) - [Introduction to Similarity based Machine Learning](https://gdg.community.dev/events/details/google-gdg-san-francisco-presents-pacific-region-devfest-2022/)
 
+* November 1: Google Cloud Customer Q&A (remote) - [Vertex AI Use Cases at Digits](https://rsvp.withgoogle.com/events/vertex-ai-reference-live)
+![Vertex AI Use Cases at Digits](/images/talks_customer_reference.png)
+
 * September 8: MLOps Community (remote) - [Scaling Similarity Learning at Digits](https://home.mlops.community/public/videos/scaling-similarity-learning-at-digits)
 <p><iframe width="640" height="360" src="https://www.youtube.com/embed/hP7gm_f7oCk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 
