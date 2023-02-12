@@ -2,7 +2,7 @@
 layout: post
 title:  Notes on Reinforcement Learning for Human Feedback
 description: Reinforcement Learning for Human Feedback (RLHF) is the concept with powers recent models like ChatGPT
-date:   2022-01-12 12:00:00 -0700
+date:   2023-01-12 12:00:00 -0700
 image:  '/images/markus-spiske-cvBBO4PzWPg-unsplash.jpg'
 tags:   [machine learning, Reinforcement Learning for Human Feedback, rlhf]
 ---

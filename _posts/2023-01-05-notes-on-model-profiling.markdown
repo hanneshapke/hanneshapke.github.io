@@ -2,7 +2,7 @@
 layout: post
 title:  Notes on Model Performance Profiling
 description: A collection of useful links with information about model performance profiling
-date:   2022-01-12 12:00:00 -0700
+date:   2023-01-12 12:00:00 -0700
 image:  '/images/mika-baumeister-Wpnoqo2plFA-unsplash.jpg'
 tags:   [machine learning, model profiling, tensorflow]
 ---

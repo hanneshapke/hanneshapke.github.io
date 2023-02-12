@@ -2,7 +2,7 @@
 layout: post
 title:  Notes on deploying models with TFServing
 description: A collection of useful links with information about the inner working of TFServing
-date:   2022-01-12 12:00:00 -0700
+date:   2023-01-12 12:00:00 -0700
 image:  '/images/pietro-jeng-n6B49lTx7NM-unsplash.jpg'
 tags:   [machine learning, mlops, deployments]
 ---
