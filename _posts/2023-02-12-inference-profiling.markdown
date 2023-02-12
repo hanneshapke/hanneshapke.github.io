@@ -2,7 +2,7 @@
 layout: post
 title:  How to Profile TensorFlow Serving Inference Requests with TFProfiler
 description: Determining bottlenecks in your deep learning model can be crucial in reducing your model latency
-date:   2022-02-12 12:00:00 -0700
+date:   2023-02-12 12:00:00 -0700
 image:  '/images/post_tensorboard/runners.jpg'
 tags:   [machine learning, model deployment, tensorflow, serving, mlops]
 ---
