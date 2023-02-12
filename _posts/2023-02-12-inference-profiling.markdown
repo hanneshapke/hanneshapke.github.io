@@ -17,7 +17,7 @@ If you use the TensorBoard callback to profile your machine learning model, all 
 
 One of the many amazing features of TensorFlow Serving is the integrated TensorFlow Profiler. TensorFlow Profiler can connect to your TensorFlow Serving instance and profile your inference requests. Through this setup, you can investigate all inference-related ops and it mimics the deployment scenario better than profiling your model during the training phase.
 
-I am often using VSCode to connect to my GPUs, but unfortunately, the TensorBoard integration in VSCode couldn't connect to TensorFlow Serving, therefore I looked for a different setup. Here is how you set it up.
+I am often using VSCode to connect to my GPUs, but unfortunately, the TensorBoard integration in VSCode couldn't connect to TensorFlow Serving, therefore I looked for a different setup. Here is how you can set it up.
 
 ## Prerequisites
 
@@ -148,7 +148,7 @@ serving_1   | [evhttp_server.cc : 245] NET_LOG: Entering the event loop ...
 ```
 
 If both containers are running, head over to your browser and access [http://localhost:6006](http://localhost:6006).
-You can start the TensorBoard Profiler by selecting “PROFILE” from the top right menu.
+You can start the TensorBoard Profiler by selecting `PROFILE` from the top right menu.
 
 ![TensorBoard Menu](/images/post_tensorboard/tensorboard_menu.png)
 
