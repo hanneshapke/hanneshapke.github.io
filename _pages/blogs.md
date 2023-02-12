@@ -9,6 +9,11 @@ A seelction of my external blog contributions.
 
 ## Blog Posts
 
+### 2023
+
+TensorFlow Blog: Extend your TFX pipeline with TFX-Addons. The post describes the community around TFX and TFX Addons.
+* [Extend your TFX pipeline with TFX-Addons](https://blog.tensorflow.org/2023/02/extend-your-tfx-pipeline-with-tfx-addons.html)
+
 ### 2022
 
 TensorFlow Blog: How Startups can benefit from TensorFlow Extended (TFX). The post introduces three core benefits: Standardization, Growth, and Reproducibility & Repeatability
