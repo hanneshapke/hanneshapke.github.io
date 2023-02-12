@@ -7,6 +7,8 @@ image:  '/images/post_tensorboard/runners.jpg'
 tags:   [machine learning, model deployment, tensorflow, serving, mlops]
 ---
 
+## Why Profiling Deep Learning Models?
+
 With the growing complexity of today's deep learning models, the aspect of model inference latency is more relevant than ever. Therefore, profiling your machine learning model for bottlenecks can save you milliseconds during your prediction requests, and it saved you ultimately real money when it comes to deploying your model in a production scenario (and CO</sub>2</sub> emissions too).
 
 Keras already provides a stellar callback function to hook the training up to TensorBoard. This connection allows you to profile your model’s performance during the training phase. However, this profiler setup only tells you half the story.
