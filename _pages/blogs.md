@@ -11,6 +11,9 @@ A seelction of my external blog contributions.
 
 ### 2023
 
+Digits Blog: Assisting Accountants with Similarity-based Machine Learning
+* [Assisting Accountants with Similarity-based Machine Learning](https://digits.com/developer/posts/assisting-accountants-with-similarity-based-machine-learning/)
+
 TensorFlow Blog: Extend your TFX pipeline with TFX-Addons. The post describes the community around TFX and TFX Addons.
 * [Extend your TFX pipeline with TFX-Addons](https://blog.tensorflow.org/2023/02/extend-your-tfx-pipeline-with-tfx-addons.html)
 
