@@ -11,6 +11,10 @@ image: '/images/01-2.jpg'
 
 ## Past Talks
 
+## 2023
+
+* March 9: MLOps Community (remote) - [LLM in Production Round Table](https://home.mlops.community/home/events/llms-in-production-2023-03-09)
+
 ## 2022
 
 * December 5: MLOps Meetup Belgium (remote) - Introduction to Similarity-based Machine Learning
