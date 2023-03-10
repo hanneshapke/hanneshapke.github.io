@@ -11,6 +11,9 @@ A seelction of my external blog contributions.
 
 ### 2023
 
+Digits Blog: ChatGPT for Accounting: How Digits is using Generative Machine Learning to transform finance
+* [ChatGPT for Accounting: How Digits is using Generative Machine Learning to transform finance](https://digits.com/developer/posts/assisting-accountants-with-generative-machine-learning/)
+
 Digits Blog: Assisting Accountants with Similarity-based Machine Learning
 * [Assisting Accountants with Similarity-based Machine Learning](https://digits.com/developer/posts/assisting-accountants-with-similarity-based-machine-learning/)
 
