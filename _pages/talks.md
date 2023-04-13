@@ -13,6 +13,9 @@ image: '/images/01-2.jpg'
 
 ## 2023
 
+* April 13: LLM in Production Conference (remote) - [LLM in Production Conference](https://home.mlops.community/home/events/llms-in-production-conference-2023-04-13)
+![LLM in Production Conference](https://media.licdn.com/dms/image/D5622AQGl4kmafNlh9w/feedshare-shrink_1280/0/1680972656240?e=1684368000&v=beta&t=M-7Y8zm_1BuuMsERFy0AQA92JsQwqsfil_0Bl48vgUI)
+
 * March 9: MLOps Community (remote) - [LLM in Production Round Table](https://home.mlops.community/home/events/llms-in-production-2023-03-09)
 
 ## 2022
