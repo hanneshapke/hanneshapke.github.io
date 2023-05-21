@@ -7,11 +7,14 @@ image: '/images/01-2.jpg'
 
 ## Upcoming Talks
 
-* No scheduled talks
+* May 26th: Google NA Connect (Miami, FL) - The role of ML Engineers inthe time of GPT-4 and PaLM 2
 
 ## Past Talks
 
 ## 2023
+
+* May 18: Google Developer Expert Chat with Margaret Maynard-Reid (remote)
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/S3tpjQWMMsA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
 
 * March 9: MLOps Community (remote) - [LLM in Production Round Table](https://home.mlops.community/home/events/llms-in-production-2023-03-09)
 
