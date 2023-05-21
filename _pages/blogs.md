@@ -11,6 +11,10 @@ A seelction of my external blog contributions.
 
 ### 2023
 
+Digits Blog: Introduction to Google's PaLM 2 API
+* [Introduction to Google's PaLM 2 API](https://digits.com/developer/posts/introduction-to-googles-palm-2-api/)
+![Introduction to Google's PaLM 2 API](/images/palm-header.png)
+
 Digits Blog: ChatGPT for Accounting: How Digits is using Generative Machine Learning to transform finance
 * [ChatGPT for Accounting: How Digits is using Generative Machine Learning to transform finance](https://digits.com/developer/posts/assisting-accountants-with-generative-machine-learning/)
 
