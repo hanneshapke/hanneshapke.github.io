@@ -16,6 +16,9 @@ image: '/images/01-2.jpg'
 * May 18: Google Developer Expert Chat with Margaret Maynard-Reid (remote)
 <p><iframe width="560" height="315" src="https://www.youtube.com/embed/S3tpjQWMMsA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
 
+* April 13: LLM in Production Conference (remote) - [LLM in Production Conference](https://home.mlops.community/home/events/llms-in-production-conference-2023-04-13)
+![LLM in Production Conference](https://media.licdn.com/dms/image/D5622AQGl4kmafNlh9w/feedshare-shrink_1280/0/1680972656240?e=1684368000&v=beta&t=M-7Y8zm_1BuuMsERFy0AQA92JsQwqsfil_0Bl48vgUI)
+
 * March 9: MLOps Community (remote) - [LLM in Production Round Table](https://home.mlops.community/home/events/llms-in-production-2023-03-09)
 
 ## 2022
