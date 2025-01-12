@@ -26,7 +26,7 @@ The situation becomes even more challenging when we scale up to larger models, p
 
 Yet, despite these performance challenges, larger models remain indispensable for many applications. They excel at complex tasks that smaller models struggle with, such as multi-step reasoning, code generation, and nuanced understanding of context. They also produce higher-quality text with fewer artifacts and better coherence. This creates a tension between the need for sophisticated model capabilities and the practical requirements of production deployment.
 
-in this solution, we will use speculative decoding to improve the performance of LLM deployments. It will allow us to improve the model latency without changing the model architecture, training data, or the trained model itself.
+In this solution, we will use speculative decoding to improve the performance of LLM deployments. It will allow us to improve the model latency without changing the model architecture, training data, or the trained model itself.
 
 ## Solution
 
