@@ -18,7 +18,7 @@ When serving large language models in production, latency optimization emerges a
 
 At the heart of this challenge lies a fundamental characteristic of auto-regressive models: their sequential nature of text generation. Unlike many computational processes that can benefit from parallel processing, these models face an architectural constraint that proves to be their primary performance bottleneck. To generate any given token K, the model must first process and consider all preceding tokens, from 1 to K-1, in sequential order. This dependency chain, which provides context for the text generation, creates a processing pipeline that cannot be easily parallelized.
 
-![Sequential token generation](/images/speculative_decoding/llm-token-generation.jpeg)
+![Sequential token generation](/images/speculative_decoding/llm-token-generation.png)
 
 Consider the process illustrated in Figure 1, where each token's generation depends on the complete history of previous tokens. This sequential dependency isn't merely a technical limitation—it's a fundamental aspect of how these models understand and generate human-like text.
 
