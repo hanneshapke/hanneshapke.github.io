@@ -26,7 +26,7 @@ The situation becomes even more challenging when we scale up to larger models, p
 
 Yet, despite these performance challenges, larger models remain indispensable for many applications. They excel at complex tasks that smaller models struggle with, such as multi-step reasoning, code generation, and nuanced understanding of context. They also produce higher-quality text with fewer artifacts and better coherence. This creates a tension between the need for sophisticated model capabilities and the practical requirements of production deployment.
 
-The challenge, therefore, is not just technical but also practical: how can we maintain the advanced capabilities of large language models while meeting the performance expectations of real-world applications? Traditional optimization approaches often involve compromises—either in model size, capability, or response quality. However, as we'll explore in this article, speculative decoding offers a promising path forward, one that maintains model capability while significantly improving generation speed, all without requiring modifications to the underlying model architecture, training data, or base model itself.
+in this solution, we will use speculative decoding to improve the performance of LLM deployments. It will allow us to improve the model latency without changing the model architecture, training data, or the trained model itself.
 
 ## Solution
 
@@ -46,7 +46,7 @@ Here is an example of how speculative decoding works:
 
 We gain the inference speed increases by two aspects. First of all, we generate multiple tokens at once. We can request multiple tokens, since we have a second model to validate the predictions. We can afford it because the initial tokens predictions are fast and cheap. Secondly, the validation of the prediction is also fast, and we only need to correct the predictions for tokens where the smaller model made a mistake.
 
-How can you use speculative decoding with your LLM? Most LLM deployment frameworks provide support of speculative decoding, in one form or another. For our core example, we are demonstrating speculative decoding with vLLM. vLLM is a frequently used framework for serving LLM models like Llama 3.2 3B. In our example, we use a smaller model to predict the next tokens and a larger model to validate the prediction and, if needed, correct the prediction. We use Llama 3.2 1B to predict the next tokens and Llama 3.3 70B to validate the prediction and, if needed, correct the prediction. The sampling of the tokens, checking them with the larger model, and correcting them is done under the hood by the LLM serving framework, in our case vLLM.
+How can you use speculative decoding with your LLM? Most LLM deployment frameworks provide support of speculative decoding, in one form or another. For our core example, we are demonstrating speculative decoding with vLLM. vLLM is a frequently used framework for serving LLM models like Llama 3.2 3B. In our example, we use a smaller model to predict the next tokens and a larger model to validate the prediction and, if needed, correct the prediction. We use Meta's `opt-125m` model to predict the next tokens and the larger `opt-2.7b` model to validate the prediction and, if needed, correct the prediction. The sampling of the tokens, checking them with the larger model, and correcting them is done under the hood by the LLM serving framework, in our case vLLM.
 
 
 ```python
@@ -73,7 +73,7 @@ for output in outputs:
 
 ```
 
-When we compare the latency of speculative decoding with the latency of the same model without speculative decoding, we can see that speculative decoding is faster by a factor of 2.5 as we can see in Figure 2.
+When we compare the latency of speculative decoding with the latency of the same model without speculative decoding, we can see that speculative decoding is faster by roughly 35% as we can see in Figure 2.
 
 ![Latency comparison](/images/speculative_decoding/speculative_decoding_comparison.png)
 
@@ -102,7 +102,11 @@ The following table shows the possible combinations of base models and smaller m
 | Llama 3.2 3B | Llama 3.1 70B |
 | Llama 3.2 1B | ? |
 
+### Problem specific Performance
+
 The performance of speculative decoding also depends on the distribution of tokens. For example, if we want to generate English text for a chatbot, speculative decoding will be more effective than if we want to generate random hashes or bank transaction descriptions. in those cases, speculative decoding will actually be slower because the larger model needs to correct the predictions too often.
+
+### Alternatives
 
 A number of LLM serving frameworks support speculative decoding. Besides vLLM, SGLang also supports speculative decoding.
 Here is a brief implementation of speculative decoding with SGLang.
