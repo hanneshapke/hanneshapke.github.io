@@ -36,13 +36,7 @@ Yaniv Leviathan et al. suggested to combine two models: a smaller model to predi
 
 Here is an example of how speculative decoding works:
 
-> [START] Speculative decoding is ~~awesome~~ (corrected: a)
-
-> [START] Speculative decoding is a technique that ~~could~~ (corrected: can)
-
-> [START] Speculative decoding is a technique that can be used to ~~explain~~ (corrected: improve)
-
-> [START] Speculative decoding is a technique that can be used to improve the performance of a language model.
+![Speculative decoding](/images/speculative_decoding/spec-decode-viz.png)
 
 We gain the inference speed increases by two aspects. First of all, we generate multiple tokens at once. We can request multiple tokens, since we have a second model to validate the predictions. We can afford it because the initial tokens predictions are fast and cheap. Secondly, the validation of the prediction is also fast, and we only need to correct the predictions for tokens where the smaller model made a mistake.
 
