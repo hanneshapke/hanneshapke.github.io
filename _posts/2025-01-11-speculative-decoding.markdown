@@ -76,7 +76,7 @@ for output in outputs:
 When we compare the latency of speculative decoding with the latency of the same model without speculative decoding, we can see that speculative decoding is faster by roughly 35% as we can see in Figure 3.
 
 <figure>
-  ![Latency comparison](/images/speculative_decoding/speculative_decoding_comparison.png)
+  <img src="/images/speculative_decoding/speculative_decoding_comparison.png" alt="Latency comparison">
   <figcaption>Figure 3: Comparison of latency between standard and speculative decoding approaches. Speculative decoding shows a 35% improvement in processing time.</figcaption>
 </figure>
 
