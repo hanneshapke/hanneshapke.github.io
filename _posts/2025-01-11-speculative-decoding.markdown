@@ -18,7 +18,10 @@ When serving large language models in production, latency optimization emerges a
 
 At the heart of this challenge lies a fundamental characteristic of auto-regressive models: their sequential nature of text generation. Unlike many computational processes that can benefit from parallel processing, these models face an architectural constraint that proves to be their primary performance bottleneck. To generate any given token K, the model must first process and consider all preceding tokens, from 1 to K-1, in sequential order. This dependency chain, which provides context for the text generation, creates a processing pipeline that cannot be easily parallelized.
 
-![Sequential token generation](/images/speculative_decoding/llm-token-generation.png)
+<figure>
+  <img src="/images/speculative_decoding/llm-token-generation.png" alt="Sequential token generation">
+  <figcaption>Figure 1: Sequential token generation</figcaption>
+</figure>
 
 Consider the process illustrated in Figure 1, where each token's generation depends on the complete history of previous tokens. This sequential dependency isn't merely a technical limitation—it's a fundamental aspect of how these models understand and generate human-like text.
 
@@ -36,7 +39,10 @@ Yaniv Leviathan et al. suggested to combine two models: a smaller model to predi
 
 Here is an example of how speculative decoding works:
 
-![Speculative decoding](/images/speculative_decoding/spec-decode-viz.png)
+<figure>
+  <img src="/images/speculative_decoding/spec-decode-viz.png" alt="Speculative decoding">
+  <figcaption>Figure 2: Speculative decoding example</figcaption>
+</figure>
 
 We gain the inference speed increases by two aspects. First of all, we generate multiple tokens at once. We can request multiple tokens, since we have a second model to validate the predictions. We can afford it because the initial tokens predictions are fast and cheap. Secondly, the validation of the prediction is also fast, and we only need to correct the predictions for tokens where the smaller model made a mistake.
 
@@ -67,9 +73,12 @@ for output in outputs:
 
 ```
 
-When we compare the latency of speculative decoding with the latency of the same model without speculative decoding, we can see that speculative decoding is faster by roughly 35% as we can see in Figure 2.
+When we compare the latency of speculative decoding with the latency of the same model without speculative decoding, we can see that speculative decoding is faster by roughly 35% as we can see in Figure 3.
 
-![Latency comparison](/images/speculative_decoding/speculative_decoding_comparison.png)
+<figure>
+  ![Latency comparison](/images/speculative_decoding/speculative_decoding_comparison.png)
+  <figcaption>Figure 3: Comparison of latency between standard and speculative decoding approaches. Speculative decoding shows a 35% improvement in processing time.</figcaption>
+</figure>
 
 
 ## Trade-offs and Alternatives
