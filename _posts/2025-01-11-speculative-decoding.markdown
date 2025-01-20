@@ -33,7 +33,9 @@ In this solution, we will use speculative decoding to improve the performance of
 
 ## Solution
 
-As we can see in Figure 1, most LLM deployments use tokens 1 to K-1 to generate token K. This process is sequential and slow and it process each token equally through the same model. One of key observations by Yaniv Leviathan et al. from Google [1] is that not every token needs this treatment. As they explained it in their paper, "some inference steps harder and others easier". They also made another observation that motivated their work: The processing isn't bound by computation, but rather by memory bandwidth. What's their solution?
+As you can see in Figure 1, most LLM deployments use tokens 1 to K-1 to generate token K. The sequential predictions aren't changing with speculative decoding, but  This process is sequential and slow and it process each token equally through the same model. We can use smaller LLMs for faster inferences, but those smaller models are not able to generate the same quality of text as the larger models.
+
+One of key observations by Yaniv Leviathan et al. from Google [1] is that not every token needs this treatment. As they explained it in their paper, "some inference steps harder and others easier". They also made another observation that motivated their work: The processing isn't bound by computation, but rather by memory bandwidth. What's their solution?
 
 Yaniv Leviathan et al. suggested to combine two models: a smaller model to predict the next tokens, a larger model to validate the prediction and, if needed, correct the prediction. The smaller model can also generate multiple tokens at a time, which is a great way to improve the overall latency.
 
@@ -82,7 +84,7 @@ When we compare the latency of speculative decoding with the latency of the same
 
 
 ## Trade-offs and Alternatives
-There are significant trade-offs when using speculative decoding. The faster inferences don't come without downsides. In this section, we will discuss the trade-offs and present an alternative for hosting LLM models without speculative decoding.
+There are significant trade-offs when using speculative decoding. The faster inferences don't come without downsides. In this section, we will discuss the trade-offs when using speculative decoding.
 
 ### Larger Memory Footprint
 
@@ -111,31 +113,30 @@ The performance of speculative decoding also depends on the distribution of toke
 
 ### Alternatives
 
-A number of LLM serving frameworks support speculative decoding. Besides vLLM, SGLang also supports speculative decoding.
-Here is a brief implementation of speculative decoding with SGLang.
+Several alternative approaches can help reduce LLM deployment latency, each with its own strengths and trade-offs.
 
-```python
-import sglang as sgl
+#### Use a smaller model
 
-prompts = [
-    "Speculative decoding is",
-]
+The simplest approach is to use a smaller model altogether. This solution offers both reduced memory footprint and faster inference times compared to speculative decoding. The deployment becomes significantly simpler, requiring only one smaller model and less powerful GPUs. However, this approach comes with an obvious drawback: the quality of generated text suffers noticeably. While faster, smaller models often lack the sophisticated reasoning and nuanced understanding that larger models provide. You would typically only consider this option if your use case doesn't require the advanced capabilities of larger models.
 
-    # Create a sampling params object.
-    sampling_params = {"temperature": 0, "max_new_tokens": 30}
+#### Use a quantized model
 
-    # Create an LLM.
-    llm = sgl.Engine(
-        model_path="facebook/opt-2.7b",
-        speculative_draft_model_path="facebook/opt-125m",
-        speculative_num_draft_tokens=5,
-    )
+Model quantization represents a sophisticated optimization technique that reduces numerical precision while preserving model functionality. By converting the model's parameters from their original 32-bit floating-point representation to 8-bit or even 4-bit precision post-training, quantization achieves significant improvements in both memory efficiency and computational performance. This reduction in numerical complexity translates directly into decreased memory footprint, lower computational overhead, and consequently, faster inference times.
 
-    outputs = llm.generate(prompts, sampling_params)
+While quantization does introduce a modest degradation in model quality compared to the original implementation, it offers compelling advantages as an alternative to speculative decoding. The deployment architecture remains streamlined with only a single model to maintain, and the reduced computational demands enable the use of more cost-effective GPU hardware. This balance of performance optimization and operational simplicity makes quantization an attractive option for many production environments.
 
-    for prompt, output in zip(prompts, outputs):
-        print(f"Prompt: {prompt}\nGenerated text: {output['text']}")
-```
+#### Parallelization
+
+Parallelization presents another powerful strategy for improving LLM performance of larger LLMs. Instead of processing multiple requests sequentially, you can process multiple requests simultaneously. This way, you can significantly decrease the effective latency across multiple requests. This approach particularly shines in high-traffic scenarios where individual requests use only a fraction of the model's context length. However, parallelization faces clear limitations: it remains constrained by both the model's maximum context length and the available GPU memory. Despite these constraints, parallelization often provides substantial performance benefits for many production deployments and it should be your first consideration when optimizing deployment latency.
+
+#### Continuous batching
+
+Continuous batching takes the parallelization concept even further. Instead of processing fixed batches, this technique dynamically pulls new requests from a queue whenever space becomes available in the current batch. This approach proves especially effective when handling a high volume of requests with varying context lengths. By maintaining consistent GPU utilization, continuous batching can achieve even lower latency than standard parallelization. However, it shares the same fundamental limitations regarding context length and GPU memory, and requires specialized deployment infrastructure to support the dynamic batching mechanism.
+
+#### Caching
+
+Caching offers a different approach to latency optimization, particularly valuable for applications with repetitive requests. By storing and reusing previous inference results for identical prompts, caching can deliver nearly instantaneous responses for repeated queries. While novel requests still face slow inference time of a large model, frequently accessed responses become lightning-fast. This makes caching particularly effective for applications like customer service chatbots or code completion tools, where certain queries appear frequently. The effectiveness of caching directly correlates with the repetitiveness of your workload – the more repeated queries you handle, the greater the performance benefit.
+
 
 ## Demo
 
@@ -150,4 +151,4 @@ Speculative decoding is a promising technique to improve the performance of LLM 
 - [1] "Fast Inference from Transformers via Speculative Decoding", Yaniv Leviathan et al. [paper](https://arxiv.org/pdf/2211.17192), accessed January 11th, 2025.
 
 ## Suggested Readings
-- "A Hitchhiker’s Guide to Speculative Decoding", [website](https://pytorch.org/blog/hitchhikers-guide-speculative-decoding/), accessed January 11th, 2025.
+- "A Hitchhiker's Guide to Speculative Decoding", [website](https://pytorch.org/blog/hitchhikers-guide-speculative-decoding/), accessed January 11th, 2025.
