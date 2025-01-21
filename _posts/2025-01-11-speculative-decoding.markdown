@@ -10,11 +10,11 @@ tags:   [machine learning,model deployment,vllm,speculative decoding,mlops,llm]
 # Speculative Decoding with vLLM
 When deploying large language models in production environments, latency optimization is crucial. This is particularly important for real-time applications like chatbots and conversational interfaces. While complex tasks often require larger LLMs (70 billion+ parameters), users still expect response times similar to smaller models. This challenge has led the machine learning community to continuously explore new ways to improve LLM latency.
 
-One of the most promising techniques is speculative decoding, which is a technique that can be used to improve the performance of a language model by predicting multiple tokens at a time with a smaller model and use a larger model to validate the predictions.
+One of the most promising techniques is speculative decoding, which is a technique that improves the performance of a language model by predicting multiple tokens at a time with a smaller model and use a larger model to validate the predictions.
 
 ## Problem
 
-When serving large language models in production, latency optimization emerges as the biggest challenge that developers will face. This challenge becomes particularly acute in real-time scenarios, where users expect near-instantaneous interactions with chatbots, code completion tools, and other AI-powered interfaces.
+When serving large language models in production, you need to lower the latency. In fact, latency optimization is the biggest challenge that developers will face in production LLM systems. This challenge becomes particularly acute in real-time scenarios, where users expect near-instantaneous interactions with chatbots, code completion tools, and other AI-powered interfaces.
 
 At the heart of this challenge lies a fundamental characteristic of auto-regressive models: their sequential nature of text generation. Unlike many computational processes that can benefit from parallel processing, these models face an architectural constraint that proves to be their primary performance bottleneck. To generate any given token K, the model must first process and consider all preceding tokens, from 1 to K-1, in sequential order. This dependency chain, which provides context for the text generation, creates a processing pipeline that cannot be easily parallelized.
 
@@ -33,20 +33,40 @@ In this solution, we will use speculative decoding to improve the performance of
 
 ## Solution
 
-As you can see in Figure 1, most LLM deployments use tokens 1 to K-1 to generate token K. The sequential predictions aren't changing with speculative decoding, but  This process is sequential and slow and it process each token equally through the same model. We can use smaller LLMs for faster inferences, but those smaller models are not able to generate the same quality of text as the larger models.
+Speculative decoding is an optimization technique that leverages two distinct language models to improve generation speed while maintaining output quality. The approach uses a teacher-student architecture where two complementary models work together: a large, sophisticated language model (LLM) that produces highly accurate outputs but is computationally expensive and relatively slow, serving as the teacher model and ground truth for token generation; and a smaller, more efficient language model that operates faster but may be less accurate, acting as the student model. The student model is specifically trained to emulate the behavior of the teacher model – for example, a 3 billion parameter model might be trained to imitate a 405 billion parameter model.
 
-One of key observations by Yaniv Leviathan et al. from Google [1] is that not every token needs this treatment. As they explained it in their paper, "some inference steps harder and others easier". They also made another observation that motivated their work: The processing isn't bound by computation, but rather by memory bandwidth. What's their solution?
+### The Inference Process
 
-Yaniv Leviathan et al. suggested to combine two models: a smaller model to predict the next tokens, a larger model to validate the prediction and, if needed, correct the prediction. The smaller model can also generate multiple tokens at a time, which is a great way to improve the overall latency.
+During text generation, the process follows a specific workflow. The student model begins by rapidly proposing a sequence of tokens based on its training to imitate the teacher model's behavior. Following this initial prediction, the teacher model evaluates the student's proposed tokens in parallel, verifying whether it would have generated the same sequence. The outcome of this validation determines the next steps: if the teacher model agrees with the student's predictions, the sequence is accepted and immediately output; however, if the teacher model disagrees, it falls back to its standard token-by-token generation process to ensure accuracy.
 
-Here is an example of how speculative decoding works:
+### Key Insight
 
-<figure>
-  <img src="/images/speculative_decoding/spec-decode-viz.png" alt="Speculative decoding">
-  <figcaption>Figure 2: Speculative decoding example</figcaption>
-</figure>
+The fundamental principle behind speculative decoding is that not all tokens require the computational power of a large model for accurate generation. Token difficulty varies significantly – simple, predictable tokens like common words or obvious completions can be reliably generated by the smaller student model, while complex or context-dependent tokens benefit from the teacher model's advanced capabilities. This selective use of computational resources allows for significant speed improvements while maintaining the quality standards of the larger model. The approach is particularly effective because it balances the trade-off between speed and accuracy by dynamically choosing the appropriate model based on the complexity of the current generation task.
 
-We gain the inference speed increases by two aspects. First of all, we generate multiple tokens at once. We can request multiple tokens, since we have a second model to validate the predictions. We can afford it because the initial tokens predictions are fast and cheap. Secondly, the validation of the prediction is also fast, and we only need to correct the predictions for tokens where the smaller model made a mistake.
+Here is an example of how speculative decoding would play out for a sequence of tokens:
+
+```python
+Step 1:
+Student: "The [talented] [chef]"
+Teacher: ✓ Accepts (common phrase)
+
+Step 2:
+Student: "cooked [a] [delicious]"
+Teacher: ✓ Accepts (common food context)
+
+Step 3:
+Student: "[soup]"
+Teacher: ✗ Rejects
+Teacher generates: "bouillabaisse" (rare, specific word)
+
+Step 4:
+Student: "[for] [dinner]"
+Teacher: ✓ Accepts (common ending)
+```
+
+How does speculative decoding improve the inference speed?
+
+We gain the inference speed increases by three aspects. First of all, we generate the proposal tokens through the smaller LLM. In addition, we can generate multiple tokens at once. We can request multiple tokens, since we have a second model to validate the predictions. We can afford it because the initial tokens predictions are fast and cheap. Secondly, the validation of the prediction is also fast, and we only need to correct the predictions for tokens where the smaller model made a mistake.
 
 How can you use speculative decoding with your LLM? Most LLM deployment frameworks provide support of speculative decoding, in one form or another. For our core example, we are demonstrating speculative decoding with vLLM. vLLM is a frequently used framework for serving LLM models like Llama 3.2 3B. In our example, we use a smaller model to predict the next tokens and a larger model to validate the prediction and, if needed, correct the prediction. We use Meta's `opt-125m` model to predict the next tokens and the larger `opt-2.7b` model to validate the prediction and, if needed, correct the prediction. The sampling of the tokens, checking them with the larger model, and correcting them is done under the hood by the LLM serving framework, in our case vLLM.
 
@@ -75,21 +95,25 @@ for output in outputs:
 
 ```
 
-When we compare the latency of speculative decoding with the latency of the same model without speculative decoding, we can see that speculative decoding is faster by roughly 35% as we can see in Figure 3.
+When we compare the latency of speculative decoding with the latency of the same model without speculative decoding, we can see that speculative decoding is faster by roughly 35% as we can see in Figure 2.
 
 <figure>
   <img src="/images/speculative_decoding/speculative_decoding_comparison.png" alt="Latency comparison">
-  <figcaption>Figure 3: Comparison of latency between standard and speculative decoding approaches. Speculative decoding shows a 35% improvement in processing time.</figcaption>
+  <figcaption>Figure 2: Comparison of latency between standard and speculative decoding approaches. Speculative decoding shows a 35% improvement in processing time.</figcaption>
 </figure>
 
 
 ## Trade-offs and Alternatives
 There are significant trade-offs when using speculative decoding. The faster inferences don't come without downsides. In this section, we will discuss the trade-offs when using speculative decoding.
 
+### Sequence Length
+
+The relationship between sequence length and performance gains in speculative decoding presents an interesting trade-off. Generally, longer sequences tend to yield higher speedups, as demonstrated in our example where we set `num_speculative_tokens=5`. This parameter allows the smaller model to predict multiple tokens ahead, potentially improving throughput. However, this advantage comes with diminishing returns: as sequence length increases, so does the likelihood of prediction errors. When these errors occur, the larger model steps in to correct the predictions, which can significantly slow down the overall inference process. Finding the optimal sequence length therefore requires careful balancing between maximizing the benefits of speculation while minimizing the computational overhead of error correction.
+
 ### Larger Memory Footprint
 
 The speculative decoding requires a larger memory footprint. The larger model needs to loaded into memory, together with the smaller model. This will require larger instances and GPUs, which translates to higher costs.
-Also, speculative decoding can be difficult for fine-tuning models. The smaller model needs to be fine-tuned on the same dataset as the larger model. This is not always possible, since fine-tuning the larger model is more expensive than fine-tuning the smaller model (however, you might the performance boost from the smaller fine-tuned model already).
+Also, fine-tuning models is difficult for when you want to use speculative decoding with your models. The smaller model needs to be fine-tuned on the same dataset as the larger model. This is not always possible, since fine-tuning the larger model is more expensive than fine-tuning the smaller model (however, you might the performance boost from the smaller fine-tuned model already).
 
 ### Model Pairing
 
@@ -145,10 +169,3 @@ We have created a demo of speculative decoding with vLLM. You can find the code 
 ## Conclusion
 
 Speculative decoding is a promising technique to improve the performance of LLM deployments. in our demo example, we were able to improve the latency by 35%. However, it comes with a larger memory footprint and more deployment complexity.
-
-## References
-
-- [1] "Fast Inference from Transformers via Speculative Decoding", Yaniv Leviathan et al. [paper](https://arxiv.org/pdf/2211.17192), accessed January 11th, 2025.
-
-## Suggested Readings
-- "A Hitchhiker's Guide to Speculative Decoding", [website](https://pytorch.org/blog/hitchhikers-guide-speculative-decoding/), accessed January 11th, 2025.
