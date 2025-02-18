@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Deploying Google's Gemma on Vertex AI
-description: description: A comprehensive guide to deploying Google's Gemma language model on Vertex AI using vLLM, covering model registration, endpoint creation, and production deployment best practices.
+description: A comprehensive guide to deploying Google's Gemma language model on Vertex AI using vLLM, covering model registration, endpoint creation, and production deployment best practices.
 date:   2025-02-17 12:00:00 -0700
 image:  '/images/speculative_decoding/speculative_decoding_comparison_header.jpg'
 tags:   [machine learning,model deployment,vllm,gemma,mlops,llm]
