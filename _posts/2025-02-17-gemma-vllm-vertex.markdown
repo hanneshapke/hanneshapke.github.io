@@ -54,16 +54,6 @@ Before beginning the deployment process, ensure you have:
 3. A Hugging Face account with access to Gemma models
 4. Basic familiarity with Python and cloud computing concepts
 
-### Setting Up Your Environment
-
-First, install the necessary Python packages:
-
-```bash
-pip install google-cloud-aiplatform
-pip install google-cloud-storage
-pip install vllm
-```
-
 ## Understanding the Deployment Architecture
 
 Our deployment strategy uses vLLM (Versatile Large Language Model) serving framework, which offers several advantages:
@@ -98,7 +88,9 @@ def register_model(
     artifact_uri: str,
     model_id: str,
     version_description: str,
-    serving_container_image_uri: str
+    serving_container_image_uri: str,
+    serving_container_environment_variables: dict,
+    serving_container_command: list
 ) -> aiplatform.Model:
     """
     Register a new model in Vertex AI Model Registry.
@@ -121,14 +113,34 @@ def register_model(
         display_name=display_name,
         artifact_uri=artifact_uri,
         model_id=model_id,
+        description="vLLM model for generating text",
         version_description=version_description,
         serving_container_image_uri=serving_container_image_uri,
         serving_container_health_route="/health",
-        serving_container_predict_route="/predict",
-        serving_container_ports=[8080],
+        serving_container_environment_variables=serving_container_environment_variables,
+        serving_container_predict_route="/generate",
+        serving_container_ports=[8000],
+        serving_container_command=serving_container_command
     )
 
     return model
+
+
+register_model(
+    project="your gcp project id",
+    location="us-central1",  # or your preferred region
+    display_name="gemma-vllm",
+    model_id="gemma_vllm_001",
+    version_description="Initial Gemma vLLM deployment",
+    serving_container_image_uri="us-docker.pkg.dev/vertex-ai/vertex-vision-model-garden-dockers/pytorch-vllm-serve:latest",
+    serving_container_environment_variables={
+        "HUGGING_FACE_HUB_TOKEN": "hf_<your token>"
+    },
+    serving_container_command=["python3", "-m", "vllm.entrypoints.api_server",
+                             "--model=google/gemma-2-2b-it",
+                             "--tensor-parallel-size=1",
+                             "--max_model_len=8126"]
+)
 ```
 
 This code does several important things:
@@ -146,6 +158,12 @@ This code does several important things:
    - Health check route for monitoring
    - Prediction route for inference
    - Port configuration for network access
+   - Image URI
+   - Container commands
+   - Huggingface token via the environmental variables
+
+#### Note about the container image
+Vertex expects a very specific request - response structure.  Google provide the instructions of how to build such a [container](https://github.com/GoogleCloudPlatform/vertex-ai-samples/blob/069d709eddac1fda7aa877d7404f10e74c82aeb4/community-content/vertex_model_garden/model_oss/vllm/dockerfile/serve.Dockerfile) and they provide a [path](https://github.com/GoogleCloudPlatform/vertex-ai-samples/blob/069d709eddac1fda7aa877d7404f10e74c82aeb4/community-content/vertex_model_garden/model_oss/vllm/vllm.patch) to update the open-source vLLM implementation. Instead of patching and building our own docker image, we short cut the work by reusing the Docker image [provided by Google's model garden](https://console.cloud.google.com/artifacts/docker/vertex-ai/us/vertex-vision-model-garden-dockers/pytorch-vllm-serve).
 
 ### Step 2: Creating an Endpoint
 
@@ -238,8 +256,8 @@ def deploy_model(
 This deployment configuration includes several important parameters:
 
 1. **Hardware Specification**:
-   - `machine_type`: The type of VM instance (e.g., 'n1-standard-4')
-   - `accelerator_type`: GPU specification (e.g., 'NVIDIA_TESLA_T4')
+   - `machine_type`: The type of VM instance (e.g., 'g2-standard-8')
+   - `accelerator_type`: GPU specification (e.g., 'NVIDIA_TESLA_L4')
    - `accelerator_count`: Number of GPUs per instance
 
 2. **Scaling Configuration**:
@@ -250,68 +268,6 @@ This deployment configuration includes several important parameters:
 3. **Traffic Management**:
    - `traffic_split`: Controls request routing
    - Enables gradual rollouts and A/B testing
-
-## The vLLM Serving Container
-
-The serving container is a crucial component that handles the actual model inference. Here's a simplified version of the container code:
-
-```python
-from fastapi import FastAPI, Request
-from vllm import LLM, SamplingParams
-import uvicorn
-
-app = FastAPI()
-
-# Initialize the model
-model = LLM(
-    model="google/gemma-7b",
-    tensor_parallel_size=1,
-    gpu_memory_utilization=0.90,
-    quantization="int8"
-)
-
-@app.post("/predict")
-async def predict(request: Request):
-    """Handle prediction requests."""
-    json_data = await request.json()
-
-    # Extract parameters
-    prompt = json_data["prompt"]
-    sampling_params = SamplingParams(
-        temperature=0.7,
-        top_p=0.95,
-        max_tokens=512
-    )
-
-    # Generate response
-    outputs = model.generate(prompt, sampling_params)
-
-    return {"response": outputs[0].text}
-
-@app.get("/health")
-async def health():
-    """Health check endpoint."""
-    return {"status": "healthy"}
-
-if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8080)
-```
-
-This serving container implements:
-
-1. **Model Initialization**:
-   - Loads the Gemma model with specific configurations
-   - Sets up GPU memory utilization
-   - Applies quantization for optimization
-
-2. **Prediction Endpoint**:
-   - Handles incoming requests
-   - Processes prompts with customizable parameters
-   - Returns generated responses
-
-3. **Health Checking**:
-   - Provides an endpoint for monitoring
-   - Enables automated health tracking
 
 ## Alternative Serving Frameworks
 
@@ -324,8 +280,8 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 from fastapi import FastAPI
 
 app = FastAPI()
-model = AutoModelForCausalLM.from_pretrained("google/gemma-7b")
-tokenizer = AutoTokenizer.from_pretrained("google/gemma-7b")
+model = AutoModelForCausalLM.from_pretrained("google/gemma-2-2b-it")
+tokenizer = AutoTokenizer.from_pretrained("google/gemma-2-2b-it")
 
 @app.post("/predict")
 async def predict(text: str):
