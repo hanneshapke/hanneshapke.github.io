@@ -3,7 +3,7 @@ layout: post
 title:  Speculative Decoding with vLLM using Gemma
 description: Improving LLM inferences with speculative decoding using Gemma
 date:   2025-02-28 12:00:00 -0700
-image:  '/images/speculative_decoding/speculative_decoding_comparison_header.jpg'
+image:  '/images/speculative_decoding/gemma2-spec-encoding.png'
 tags:   [machine learning,model deployment,vllm,speculative decoding,mlops,llm,gemma]
 ---
 
