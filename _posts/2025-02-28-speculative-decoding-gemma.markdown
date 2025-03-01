@@ -166,3 +166,7 @@ We have created a demo of speculative decoding with vLLM using Gemma. You can fi
 ## Conclusion
 
 Speculative decoding is a promising technique to improve the performance of LLM deployments. in our demo example, we were able to improve the latency by 35%. However, it comes with a larger memory footprint and more deployment complexity.
+
+## Acknowledgements
+
+We would like to thank Google's Developer Community (GDE) for providing the funding to create this demo. #VertexAISprint
