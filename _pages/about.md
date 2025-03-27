@@ -5,13 +5,32 @@ permalink: /about/
 image: '/images/Google_talk_hannes.jpeg'
 ---
 
-Hi, I am Hannes, an **experienced, product-focused machine learning engineer** and **author** with a passion for building machine learning (ML) models and improving ML pipelines. I was Digits' first ML engineer and laid the ground work for a number of machine projects ranging from similarity machine learning to custom generative AI. Very excited to work with such an amazing team of colleagues. In my work, I focus on several key areas, including **similarity learning, machine learning for search, MLOps, and continuous model training**.
+Hi, I am Hannes, an **experienced, product-focused machine learning engineer** and **author** with a passion for building machine learning (ML) models and improving ML pipelines. As Digits' first ML engineer, I established the foundation for numerous machine learning projects ranging from similarity learning to custom generative AI. I'm thrilled to work with such an exceptional team of colleagues.
 
-In addition to my work at Digits, I am also a co-author of two machine learning related books: **Building Machine Learning Pipelines (O'Reilly Media)** and **NLP in Action (Manning Publishing)**. Both of these works showcase Hannes' expertise in the field and his dedication to helping others understand and use machine learning effectively.
+## Areas of Expertise
+My work focuses on several key areas:
 
-In addition to my professional accomplishments, I moderate Google's TensorFlow Extended (TFX) special interest group. As a **community leader of the TensorFlow Extended (TFX) group**, I am always looking for ways to connect with other professionals in the field. I am also an active contributor to Google's Model Card Toolkit project, which aims to help researchers and developers understand and document the characteristics of their ML models.
+- Similarity learning
+- Machine learning for search
+- MLOps
+- Continuous model training
 
-I am **passionate about using machine learning to solve real-world problems**, and dedicated my career to building and implementing effective machine learning solutions for a variety of industries. I am constantly seeking new ways to push the boundaries of what is possible with machine learning, and I am always looking for ways to improve and optimize the machine learning systems.
+## Publications
+In addition to my work at Digits, I've co-authored three machine learning related books:
+
+- [Machine Learning Production Systems](https://www.oreilly.com/library/view/machine-learning-production/9781492092673/) (O'Reilly Media)
+- [Building Machine Learning Pipelines](https://www.oreilly.com/library/view/building-machine-learning/9781492052897/) (O'Reilly Media)
+- [NLP in Action](https://www.manning.com/books/nlp-in-action) (Manning Publishing)
+
+These publications demonstrate my expertise in the field and my commitment to helping others understand and use machine learning effectively.
+
+## Professional Engagement
+I serve on **Google's Developer Board (gDAB)** where I advise Google on future projects in the AI/ML space.
+I moderate **Google's TensorFlow Extended (TFX)** special interest group. As a **community leader** of the TensorFlow Extended (TFX) group, I continuously seek ways to connect with other professionals in the field.
+I'm also an active contributor to **Google's Model Card Toolkit project**, which helps researchers and developers understand and document the characteristics of their ML models.
+
+## Professional Philosophy
+I am **passionate about using machine learning to solve real-world problems** and have dedicated my career to building and implementing effective machine learning solutions across various industries. I constantly seek new ways to push the boundaries of what's possible with machine learning and am always looking to improve and optimize machine learning systems.
 
 <div class="gallery-box">
   <div class="gallery">

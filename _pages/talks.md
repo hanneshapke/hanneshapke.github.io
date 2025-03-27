@@ -7,11 +7,39 @@ image: '/images/01-2.jpg'
 
 ## Upcoming Talks
 
-* May 26th: Google NA Connect (Miami, FL) - The role of ML Engineers inthe time of GPT-4 and PaLM 2
+None
 
 ## Past Talks
 
+### 2025
+
+* February 19: Google Developer Group Seattle (remote) - [Creating your own private Gemma API with Google Vertex](https://digits.com/blog/google-developer-group-seattle-talk-2025/)
+
+## 2024
+
+* November 7: Google North America Connect Conference (Sunnyvale, CA) - Creating your own private LLM endpoints
+
+* July 7: AI in Production (Asheville, NC) - [Deploying Large Language Models with Ease](https://www.aiinproduction.com/2024/speakers/hannes_hapke)
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/jaJj9w_9PpU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+
+* April 16: Lecture at the University of Washington (Seattle, WA) - GenAI in Finance
+![uw_lecture.jpg](/images/uw_lecture.jpg)
+
+* April 10: Google Next'24 (Las Vegas, NV) - Introduction to Digits' ML using Vertex & NVIDIA Technology
+
+* February 15: AI in Production Conference (remote) - [Machine Learning Beyond GenAI - Quo Vadis](https://digits.com/blog/ai-in-production-2024/)
+
 ## 2023
+
+* December 13: MLOps Meetup Belgium (remote) - [True ML Talks #16 - Machine Learning Pipeline @ Digits](https://www.truefoundry.com/blog/machine-learning-platform-digits)
+
+* December 5: Digital CPA Conference 2023 (Las Vegas, NV) - [AI Adoption Roadmap: Top Considerations](https://www.linkedin.com/feed/update/urn:li:activity:7138307783615062016/)
+
+* October 25: MLOps World (Austin, TX) - Fine-tuning LLMs or Model APIs
+
+* October 12: Generative AI in Production (remote) - Panel Discussion
+
+* May 26th: Google NA Connect (Miami, FL) - The role of ML Engineers in the time of GPT-4 and PaLM 2
 
 * May 18: Google Developer Expert Chat with Margaret Maynard-Reid (remote)
 <p><iframe width="560" height="315" src="https://www.youtube.com/embed/S3tpjQWMMsA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>

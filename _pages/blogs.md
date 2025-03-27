@@ -9,6 +9,31 @@ A seelction of my external blog contributions.
 
 ## Blog Posts
 
+### 2025
+
+* [Digits Blog: Digits at GTC 25](https://digits.com/blog/digits-at-gtc-25/)
+
+* [Digits Blog: Google Developer Group Seattle Talk 2025](https://digits.com/blog/google-developer-group-seattle-talk-2025/)
+
+
+### 2024
+
+* [Digits Blog: Llama 3.2: A Game Changer for Smaller LLMs](https://digits.com/blog/llama-3-2-a-game-changer-for-smaller-llms/)
+
+* [Digits Blog: Digits at CUDA Mode IRl](https://digits.com/blog/digits-at-cuda-mode-irl/)
+
+* [Digits Blog: Deploying Llama 3.2: A Breeze with vLLM and Kubernetes](https://digits.com/blog/deploying-llama-3-2-a-breeze-with-vllm-and-kubernetes/)
+
+* [Digits Blog: Deploying LLMs with Ease: Lessons shared at AI in Production 2024](https://digits.com/blog/deploying-llms-with-ease/)
+
+* [Digits Blog: AI in Production 2024](https://digits.com/blog/ai-in-production-2024/)
+
+* [Digits Blog: Google I/O 2024](https://digits.com/blog/google-io-2024/)
+
+* [Digits Blog: UW Lecture 2024](https://digits.com/blog/uw-lecture-2024/)
+
+* [Digits Blog: Google Cloud Next 2024](https://digits.com/blog/google-cloud-next-2024/)
+
 ### 2023
 
 * [Digits Blog: Introduction to Google's PaLM 2 API](https://digits.com/developer/posts/introduction-to-googles-palm-2-api/)

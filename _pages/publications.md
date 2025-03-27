@@ -11,6 +11,24 @@ A list of my machine learning related publications
 
 I had the unique opportunity to co-author two machine learning books. More to come ...
 
+### "Machine Learning Production Systems" by O'Reilly Media
+
+![Machine Learning Production Systems book cover](/images/ml_production_systems.png)
+
+In the rapidly evolving landscape of artificial intelligence, building machine learning systems that work reliably in production environments remains one of the greatest challenges facing organizations today. Over the course of 2023 and 2024, I collaborated with Robert Crowe, Emily Caveness, and Di Zhu to create **"Machine Learning Production Systems"**, published by O'Reilly Media—a comprehensive guide designed to bridge the gap between experimental machine learning and production-ready systems.
+As the capabilities of generative AI continue to transform industries, we recognized the need to take a fresh look at the ML production landscape. Our goal was to examine the different components that come together to create robust ML production systems, with special attention to the unique requirements of GenAI deployments.
+"Machine Learning Production Systems: Engineering Machine Learning Models and Pipelines" addresses the critical need for practical guidance by providing a comprehensive roadmap for the entire ML production lifecycle. Drawing from our collective experience at organizations ranging from innovative startups to established tech giants, we've distilled proven patterns and architectural blueprints that work in real-world settings.
+The book is organized into four comprehensive sections that systematically cover all aspects of machine learning engineering:
+
+- **Data management frameworks and best practices**
+- **State-of-the-art modeling techniques**
+- **Robust deployment strategies**
+- **Critical operational considerations**
+
+Throughout these sections, we explore how to efficiently collect and preprocess data, build high-performance models, design resilient serving architectures, and implement effective monitoring systems—all essential elements for successfully moving machine learning from experimentation to production.
+Whether you're a machine learning engineer, data scientist, engineering manager, or technical leader, this book provides the practical knowledge needed to build and maintain ML systems that deliver real business value in production environments.
+
+
 ### "Building Machine Learning Pipelines" by O'Reilly Media
 
 ![Building Machine Learning Pipelines book cover](/images/building_ml_pipelines.jpg)
