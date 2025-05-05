@@ -15,6 +15,7 @@ None
 
 * February 19: Google Developer Group Seattle (remote) - [Creating your own private Gemma API with Google Vertex](https://digits.com/blog/google-developer-group-seattle-talk-2025/)
 
+* April 28: Startup Grind Conference (Redwood, CA) - [Startup Grind Conference 2025](https://digits.com/blog/digits-at-startup-grind-conference-2025/)
 ## 2024
 
 * November 7: Google North America Connect Conference (Sunnyvale, CA) - Creating your own private LLM endpoints
