@@ -13,7 +13,7 @@ I had the unique opportunity to co-author two machine learning books. More to co
 
 ### "Machine Learning Production Systems" by O'Reilly Media
 
-![Machine Learning Production Systems book cover](/images/ml_production_systems.png)
+<img src="/images/ml_production_systems.png" alt="Machine Learning Production Systems book cover" width="200">
 
 In the rapidly evolving landscape of artificial intelligence, building machine learning systems that work reliably in production environments remains one of the greatest challenges facing organizations today. Over the course of 2023 and 2024, I collaborated with Robert Crowe, Emily Caveness, and Di Zhu to create **"Machine Learning Production Systems"**, published by O'Reilly Media—a comprehensive guide designed to bridge the gap between experimental machine learning and production-ready systems.
 As the capabilities of generative AI continue to transform industries, we recognized the need to take a fresh look at the ML production landscape. Our goal was to examine the different components that come together to create robust ML production systems, with special attention to the unique requirements of GenAI deployments.

@@ -11,6 +11,8 @@ A seelction of my external blog contributions.
 
 ### 2025
 
+* [AIthority.com: How AI Startups Can Compete Against Tech Giants in the Age of OpenAI](https://aithority.com/machine-learning/how-ai-startups-can-compete-against-tech-giants-in-the-age-of-openai/)
+
 * [Digits Blog: Digits at GTC 25](https://digits.com/blog/digits-at-gtc-25/)
 
 * [Digits Blog: Google Developer Group Seattle Talk 2025](https://digits.com/blog/google-developer-group-seattle-talk-2025/)
