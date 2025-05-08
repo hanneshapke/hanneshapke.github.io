@@ -13,7 +13,7 @@ I had the unique opportunity to co-author two machine learning books. More to co
 
 ### "Machine Learning Production Systems" by O'Reilly Media
 
-<img src="/images/ml_production_systems.png" alt="Machine Learning Production Systems book cover" width="200">
+<img src="/images/ml_production_systems.png" alt="Machine Learning Production Systems book cover" width="400" style="display: block; margin: 0 auto; border: 1px solid #ccc;">
 
 In the rapidly evolving landscape of artificial intelligence, building machine learning systems that work reliably in production environments remains one of the greatest challenges facing organizations today. Over the course of 2023 and 2024, I collaborated with Robert Crowe, Emily Caveness, and Di Zhu to create **"Machine Learning Production Systems"**, published by O'Reilly Media—a comprehensive guide designed to bridge the gap between experimental machine learning and production-ready systems.
 As the capabilities of generative AI continue to transform industries, we recognized the need to take a fresh look at the ML production landscape. Our goal was to examine the different components that come together to create robust ML production systems, with special attention to the unique requirements of GenAI deployments.
@@ -31,7 +31,7 @@ Whether you're a machine learning engineer, data scientist, engineering manager,
 
 ### "Building Machine Learning Pipelines" by O'Reilly Media
 
-![Building Machine Learning Pipelines book cover](/images/building_ml_pipelines.jpg)
+<img src="/images/building_ml_pipelines.jpg" alt="Building Machine Learning Pipelines book cover" width="400" style="display: block; margin: 0 auto; border: 1px solid #ccc;">
 
 Between 2019 and 2020, I co-authored the ML engineering publication **"Building Machine Learning Pipelines"**, published by O'Reilly Media.
 
@@ -48,7 +48,7 @@ Overall, Building Machine Learning Pipelines is an invaluable resource for anyon
 
 ### "NLP in Action" by Manning Publishing
 
-![NLP in Action book cover](/images/NLP_in_Action.jpeg)
+<img src="/images/NLP_in_Action.jpeg" alt="NLP in Action book cover" width="400" style="display: block; margin: 0 auto; border: 1px solid #ccc;">
 
 **"Natural Language Processing (NLP) in Action"** is a comprehensive guide to the exciting field of natural language processing written in 2017. In this book, we took a dive deep into the fundamentals of NLP and explore the techniques and tools used in the industry.
 
