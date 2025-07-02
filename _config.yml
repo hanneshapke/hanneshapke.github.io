@@ -12,7 +12,7 @@ color_scheme: auto # You can choose three modes auto, light, and dark. By defaul
 # Author Settings
 author:
   author__name: Hannes Hapke
-  author__bio: ML Engineering Leader and bestselling author with expertise in production machine learning systems, MLOps, and generative AI. Co-author of three O'Reilly and Manning publications on machine learning engineering.
+  author__bio: ML Engineering Leader and bestselling author with expertise in production machine learning systems, MLOps, and generative AI. Co-author of four O'Reilly and Manning publications on machine learning engineering.
   author__avatar: '/images/01-1.jpg'
 
 social:
