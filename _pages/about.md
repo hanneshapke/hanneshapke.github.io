@@ -5,48 +5,57 @@ permalink: /about/
 image: '/images/Google_talk_hannes.jpeg'
 ---
 
-Hi, I am Hannes, an **experienced, product-focused machine learning engineer** and **author** with a passion for building machine learning (ML) models and improving ML pipelines. As Digits' first ML engineer, I established the foundation for numerous machine learning projects ranging from similarity learning to custom generative AI. I'm thrilled to work with such an exceptional team of colleagues.
+I'm a product-focused **ML Engineering Leader** and **bestselling author** who specializes in building production machine learning systems that scale. As the first ML engineer at Digits, I established the technical foundation for machine learning initiatives ranging from similarity learning to custom generative AI solutions, working alongside an exceptional team of engineers and designers.
 
-## Areas of Expertise
-My work focuses on several key areas:
+## Core Expertise
 
-- Similarity learning
-- Machine learning for search
-- MLOps
-- Continuous model training
+My work centers on solving complex challenges in production machine learning:
 
-## Publications
-In addition to my work at Digits, I've co-authored three machine learning related books:
+- **Production ML Architecture** - Designing scalable systems that bridge research and deployment
+- **MLOps & Continuous Training** - Building robust pipelines for model lifecycle management
+- **Generative AI Systems** - Implementing custom LLM solutions and deployment strategies
+- **Similarity Learning** - Developing sophisticated matching engines
 
-- [Machine Learning Production Systems](https://www.oreilly.com/library/view/machine-learning-production/9781492092673/) (O'Reilly Media)
-- [Building Machine Learning Pipelines](https://www.oreilly.com/library/view/building-machine-learning/9781492052897/) (O'Reilly Media)
-- [NLP in Action](https://www.manning.com/books/nlp-in-action) (Manning Publishing)
+## Published Works
 
-These publications demonstrate my expertise in the field and my commitment to helping others understand and use machine learning effectively.
+I've co-authored **four machine learning books** published by O'Reilly Media and Manning Publications:
 
-## Professional Engagement
-I serve on **Google's Developer Board (gDAB)** where I advise Google on future projects in the AI/ML space.
-I moderate **Google's TensorFlow Extended (TFX)** special interest group. As a **community leader** of the TensorFlow Extended (TFX) group, I continuously seek ways to connect with other professionals in the field.
-I'm also an active contributor to **Google's Model Card Toolkit project**, which helps researchers and developers understand and document the characteristics of their ML models.
+**[GenAI Design Patterns](https://www.oreilly.com/library/view/generative-ai-design/9798341622654)** (O'Reilly, 2025)
+*A comprehensive guide to designing and deploying GenAI applications, with special focus on best practices and patterns.*
+
+**[Machine Learning Production Systems](https://www.oreilly.com/library/view/machine-learning-production/9781492092673/)** (O'Reilly, 2024)
+*A comprehensive guide to engineering ML systems for production environments, with special focus on GenAI deployment patterns.*
+
+**[Building Machine Learning Pipelines](https://www.oreilly.com/library/view/building-machine-learning/9781492052897/)** (O'Reilly, 2020)
+*The definitive resource for TensorFlow Extended (TFX) and end-to-end ML pipeline engineering.*
+
+**[NLP in Action](https://www.manning.com/books/nlp-in-action)** (Manning, 2019)
+*Practical guide to natural language processing, from statistical methods to deep learning approaches.*
+
+These publications represent my commitment to advancing the field and helping practitioners build effective ML systems.
+
+## Industry Leadership
+
+**Google Developer Advisory Board (gDAB)**
+I advise Google on strategic AI/ML initiatives and provide technical guidance on developer experience and tooling.
+
+**TensorFlow Extended (TFX) Community Lead**
+As a moderator of Google's TFX Special Interest Group, I help shape the future of production ML tooling and foster community collaboration.
+
+**Open Source Contributor**
+Active contributor to Google's Model Card Toolkit and other ML infrastructure projects that help teams document and understand their models.
 
 ## Professional Philosophy
-I am **passionate about using machine learning to solve real-world problems** and have dedicated my career to building and implementing effective machine learning solutions across various industries. I constantly seek new ways to push the boundaries of what's possible with machine learning and am always looking to improve and optimize machine learning systems.
 
-<div class="gallery-box">
-  <div class="gallery">
-    <img src="/images/mailchimp1.jpg">
-    <img src="/images/mailchimp2.jpg">
-    <img src="/images/mailchimp3.jpg">
-    <img src="/images/mailchimp4.jpg">
-    <img src="/images/mailchimp5.jpg">
-    <img src="/images/mailchimp6.jpg">
-  </div>
-  <em>Gallery</em>
-</div>
+I believe that **machine learning's true value emerges when research transitions successfully to production**. My approach focuses on building systems that are not only technically sophisticated but also operationally robust, maintainable, and aligned with business objectives.
 
-### What you can find on this site
+Through my work at Digits, publications, and community involvement, I continuously explore innovative approaches to ML engineering challenges while maintaining practical focus on real-world deployment requirements.
 
-* [List of Co-Authored Machine Learning Books](http://www.hanneshapke.com/books/)
-* [List of Machine Learning Publications](http://www.hanneshapke.com/publications/)
-* [List of 40+ machine learning related talks](http://www.hanneshapke.com/talks/)
+---
+
+### Resources
+
+* **[Books & Publications](/books/)** - Complete bibliography of my ML publications
+* **[Technical Talks](/talks/)** - 40+ presentations on ML engineering and MLOps
+* **[External Publications](/publications/)** - Blog posts and technical articles
 

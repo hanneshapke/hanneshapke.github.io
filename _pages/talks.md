@@ -5,9 +5,13 @@ permalink: /talks/
 image: '/images/01-2.jpg'
 ---
 
+**40+ technical presentations** delivered at major industry conferences, Google events, and community meetups worldwide. These talks focus on production machine learning systems, MLOps best practices, and emerging trends in generative AI deployment.
+
+---
+
 ## Upcoming Talks
 
-None
+* July 18: AI in Production (Asheville, NV) - [Agents in Production](https://www.aiinproduction.com/2025/speakers/hannes_hapke)
 
 ## Past Talks
 
@@ -151,8 +155,8 @@ None
 * May 30: Google AI Huddle (Seattle, WA) - [Empower Google Cloud Functions with Machine Learning](https://www.meetup.com/login/?returnUri=https%3A%2F%2Fwww.meetup.com%2Fgoogle-ai-huddle-seattle%2Fevents%2F261512141)
 ![Empower Google Cloud Functions with Machine Learning](/images/talks_seattle_huddle.jpeg)
 
-* April 30: ML4All Conference (Portland, OR) - [MLOps for non-DevOps folks, a.k.a. “I have a model, now what?!](https://www.youtube.com/watch?v=_xH7mlDGb0c&list=PLOnHsSCrR68xBQITh2Sf9YjD_z26p0Kt0)
-![MLOps for non-DevOps folks, a.k.a. “I have a model, now what?!](/images/talks_ML4all.jpeg)
+* April 30: ML4All Conference (Portland, OR) - [MLOps for non-DevOps folks, a.k.a. "I have a model, now what?!](https://www.youtube.com/watch?v=_xH7mlDGb0c&list=PLOnHsSCrR68xBQITh2Sf9YjD_z26p0Kt0)
+![MLOps for non-DevOps folks, a.k.a. "I have a model, now what?!](/images/talks_ML4all.jpeg)
 
 * March 28: Machine Learning Meetup (Portland, OR) - [TensorFlow Dev Summit Recap](https://www.meetup.com/login/?returnUri=https%3A%2F%2Fwww.meetup.com%2Fmlops-portland%2Fevents%2F259605753)
 
