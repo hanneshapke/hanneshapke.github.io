@@ -9,9 +9,11 @@ image: '/images/ml_books_right.jpeg'
 
 ## Recent Publications
 
-### 2025 **[AIthority.com: How AI Startups Can Compete Against Tech Giants in the Age of OpenAI](https://aithority.com/machine-learning/how-ai-startups-can-compete-against-tech-giants-in-the-age-of-openai/)**
+### 2025
 
-**Strategic analysis of competitive positioning for AI startups in an ecosystem dominated by large tech companies.**
+**Focus: AI Startups, GenAI, and AI trends**
+
+* [AIthority.com: How AI Startups Can Compete Against Tech Giants in the Age of OpenAI](https://aithority.com/machine-learning/how-ai-startups-can-compete-against-tech-giants-in-the-age-of-openai/)
 
 * [Digits Blog: Digits at GTC 25](https://digits.com/blog/digits-at-gtc-25/)
 

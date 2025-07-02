@@ -11,7 +11,7 @@ image: '/images/01-2.jpg'
 
 ## Upcoming Talks
 
-* July 18: AI in Production (Asheville, NV) - [Agents in Production](https://www.aiinproduction.com/2025/speakers/hannes_hapke)
+* July 18: AI in Production (Asheville, NC) - [Agents in Production](https://www.aiinproduction.com/2025/speakers/hannes_hapke)
 
 ## Past Talks
 
