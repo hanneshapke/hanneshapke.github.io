@@ -5,6 +5,7 @@ description: I find myself revisiting highly interestign Twitter threads. Here i
 date:   2022-10-22 15:01:35 -0700
 image:  '/images/15.jpg'
 tags:   [machine learning, mlops, startups]
+read_time: 3
 ---
 I find myself revisiting highly interestign Twitter threads. Here is a list of the most interesting threads sorted by topics ...
 
