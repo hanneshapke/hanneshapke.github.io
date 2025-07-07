@@ -49,23 +49,37 @@
   pointer-events: none;
 }
 
-.article__reading-time {
-  position: absolute;
-  z-index: 1;
-  top: 16px;
-  right: 16px;
-  display: inline-block;
-  padding: 6px 12px;
-  font-size: 12px;
-  line-height: 1;
-  font-weight: 600;
-  border-radius: 6px;
+.article__meta {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 14px;
   color: var(--text-alt-color);
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  pointer-events: none;
+}
+
+.article__author {
+  font-weight: 500;
+  color: var(--text-alt-color);
+}
+
+.article__meta-date {
+  color: var(--text-alt-color);
+  margin-left: 8px;
+
+  &::before {
+    content: "•";
+    margin-right: 8px;
+  }
+}
+
+.article__reading-time {
+  color: var(--text-alt-color);
+  margin-left: 8px;
+
+  &::before {
+    content: "•";
+    margin-right: 8px;
+  }
 }
 
 .article__image {
