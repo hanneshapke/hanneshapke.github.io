@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Publications
-permalink: /publications/
+title: Blog Posts
+permalink: /blog/
 image: '/images/ml_books_right.jpeg'
 ---
 
-**External publications and technical contributions** across industry blogs, research platforms, and community publications. These articles represent my ongoing commitment to sharing practical insights on ML engineering, production systems, and emerging technologies.
+**Blog posts and technical contributions** across industry blogs, research platforms, and community blog posts. These articles represent my ongoing commitment to sharing practical insights on ML engineering, production systems, and emerging technologies.
 
-## Recent Publications
+## Recent Blog Posts
 
 ### 2025
 

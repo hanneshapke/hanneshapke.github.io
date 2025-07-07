@@ -57,5 +57,5 @@ Through my work at Digits, publications, and community involvement, I continuous
 
 * **[Books & Publications](/books/)** - Complete bibliography of my ML publications
 * **[Technical Talks](/talks/)** - 40+ presentations on ML engineering and MLOps
-* **[External Publications](/publications/)** - Blog posts and technical articles
+* **[Blog Posts](/blog/)** - Blog posts and technical articles
 
