@@ -3,6 +3,7 @@ layout: page
 title: About
 permalink: /about/
 image: '/images/Google_talk_hannes.jpeg'
+nav_order: 1
 ---
 
 I'm a product-focused **ML Engineering Leader** and **bestselling author** who specializes in building production machine learning systems that scale. As the first ML engineer at Digits, I established the technical foundation for machine learning initiatives ranging from similarity learning to custom generative AI solutions, working alongside an exceptional team of engineers and designers.

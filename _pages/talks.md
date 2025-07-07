@@ -3,6 +3,7 @@ layout: page
 title: Talks
 permalink: /talks/
 image: '/images/01-2.jpg'
+nav_order: 4
 ---
 
 **40+ technical presentations** delivered at major industry conferences, Google events, and community meetups worldwide. These talks focus on production machine learning systems, MLOps best practices, and emerging trends in generative AI deployment.

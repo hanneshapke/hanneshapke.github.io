@@ -3,6 +3,7 @@ layout: page
 title: Books
 permalink: /books/
 image: '/images/ml_books_right.jpeg'
+nav_order: 2
 ---
 
 I've co-authored **four comprehensive machine learning books** that have helped thousands of practitioners build production-ready ML systems. Each publication addresses critical challenges in the ML engineering lifecycle.

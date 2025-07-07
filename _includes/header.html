@@ -24,9 +24,10 @@
               <li class="nav__item">
                 <a href="{{ site.baseurl }}/" class="nav__link">Home</a>
               </li>
-              {% for page in site.pages %}
+              {% assign sorted_pages = site.pages | sort: 'nav_order' %}
+              {% for page in sorted_pages %}
                 {% unless page.name == 'tags.html' or page.name == '404.html' %}
-                  {% if page.title %}
+                  {% if page.title and page.nav_order %}
                   <li class="nav__item">
                     <a href="{{ page.url | prepend: site.baseurl }}" class="nav__link">{{ page.title }}</a>
                   </li>
