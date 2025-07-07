@@ -2,7 +2,7 @@
   <div class="article__inner">
 
     <div class="article__head">
-      <time class="article__date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>
+      <!-- <time class="article__date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time> -->
       {% assign words = post.content | number_of_words %}
       {% if words < 360 %}
         <span class="article__reading-time">1 min read</span>
