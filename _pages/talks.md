@@ -12,15 +12,21 @@ nav_order: 4
 
 ## Upcoming Talks
 
-* July 18: AI in Production (Asheville, NC) - [Agents in Production](https://www.aiinproduction.com/2025/speakers/hannes_hapke)
+TBD
 
 ## Past Talks
 
 ### 2025
 
-* February 19: Google Developer Group Seattle (remote) - [Creating your own private Gemma API with Google Vertex](https://digits.com/blog/google-developer-group-seattle-talk-2025/)
+* November 14: Oregon State University - Supply Chain Management Council (Portland, OR) - [Machine Learning in Supply Chain Management]
+
+* October 8: GenAI Summit 2025 (Austin, TX) - [Agents in Production](https://mlopsworld.com/speakers/#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjI1MjI3OSIsInRvZ2dsZSI6ZmFsc2V9)
+
+* July 18: AI in Production (Asheville, NC) - [Agents in Production](https://www.aiinproduction.com/2025/speakers/hannes_hapke)
 
 * April 28: Startup Grind Conference (Redwood, CA) - [Startup Grind Conference 2025](https://digits.com/blog/digits-at-startup-grind-conference-2025/)
+
+* February 19: Google Developer Group Seattle (remote) - [Creating your own private Gemma API with Google Vertex](https://digits.com/blog/google-developer-group-seattle-talk-2025/)
 ## 2024
 
 * November 7: Google North America Connect Conference (Sunnyvale, CA) - Creating your own private LLM endpoints
