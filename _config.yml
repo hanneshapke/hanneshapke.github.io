@@ -2,7 +2,7 @@
 # Site Settings
 title: Hannes Hapke
 logo: # You can add own logo. For example '/images/logo.png'.
-description: ML Engineering Leader & Author. Specialist in production machine learning systems, MLOps, and generative AI applications.
+description: ML Engineering Leader & Author. Specialist in open source machine learning, MLOps, and generative AI applications.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.hanneshapke.com" # the base hostname & protocol for your site, e.g. http://example.com
 color_scheme: auto # You can choose three modes auto, light, and dark. By default, the auto mode is set, which means the user can choose the light or dark mode themself.
@@ -12,7 +12,7 @@ color_scheme: auto # You can choose three modes auto, light, and dark. By defaul
 # Author Settings
 author:
   author__name: Hannes Hapke
-  author__bio: ML Engineering Leader and bestselling author with expertise in production machine learning systems, MLOps, and generative AI. Co-author of four O'Reilly and Manning publications on machine learning engineering.
+  author__bio: ML Engineering Leader and bestselling author with expertise in open source machine learning tools, MLOps, and generative AI. Co-author of four O'Reilly and Manning publications on machine learning engineering.
   author__avatar: '/images/01-1.jpg'
 
 social:
@@ -23,7 +23,7 @@ social:
 # Hero Settings
 hero:
   hero__title: Building Production ML Systems That Scale
-  hero__description: ML Engineering Leader, author of four machine learning books, and Google Developer Expert. I help organizations architect robust ML systems from research to production, specializing in MLOps, generative AI deployment, and scalable data platforms.
+  hero__description: ML Engineering Leader, author of four machine learning books, and Google Developer Expert. I help organizations architect robust ML systems from research to production, specializing in open source machine learning, generative AI deployment, and scalable data platforms.
   hero__image: '/images/01.jpg'
 
 
