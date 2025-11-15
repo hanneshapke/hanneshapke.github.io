@@ -6,11 +6,11 @@ image: '/images/Google_talk_hannes.jpeg'
 nav_order: 1
 ---
 
-I'm a product-focused **ML Engineering Leader** and **bestselling author** who specializes in building production machine learning systems that scale. As the first ML engineer at Digits, I established the technical foundation for machine learning initiatives ranging from similarity learning to custom generative AI solutions, working alongside an exceptional team of engineers and designers.
+I'm a product-focused **ML Engineering Leader** and **bestselling author** who specializes in building open source machine learning tools that scale. I head Dataiku's Open Source Office, advancing open source tooling around agents and LLMs. Previously, as the first ML engineer at Digits, I established the technical foundation for machine learning initiatives ranging from similarity learning to custom generative AI solutions, working alongside an exceptional team of engineers and designers.
 
 ## Core Expertise
 
-My work centers on solving complex challenges in production machine learning:
+My work centers on solving complex challenges using open source machine learning:
 
 - **Production ML Architecture** - Designing scalable systems that bridge research and deployment
 - **MLOps & Continuous Training** - Building robust pipelines for model lifecycle management
@@ -50,7 +50,7 @@ Active contributor to Google's Model Card Toolkit and other ML infrastructure pr
 
 I believe that **machine learning's true value emerges when research transitions successfully to production**. My approach focuses on building systems that are not only technically sophisticated but also operationally robust, maintainable, and aligned with business objectives.
 
-Through my work at Digits, publications, and community involvement, I continuously explore innovative approaches to ML engineering challenges while maintaining practical focus on real-world deployment requirements.
+Through my work at Dataiku and Digits, publications, and community involvement, I continuously explore innovative approaches to ML engineering challenges while maintaining practical focus on real-world deployment requirements.
 
 ---
 
