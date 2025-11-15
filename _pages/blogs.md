@@ -20,6 +20,12 @@ nav_order: 3
 
 * [Digits Blog: Google Developer Group Seattle Talk 2025](https://digits.com/blog/google-developer-group-seattle-talk-2025/)
 
+* [Digits Blog: MLOps World 2025 Slides](https://digits.com/blog/mlops-world-2025-slides/)
+
+* [Digits Blog: AI in Production 2025 Slides](https://digits.com/blog/ai-in-production-2025-slides/)
+
+* [Digits Blog: AI in Production 2025](https://digits.com/blog/ai-in-production-2025/)
+
 * [Digits Blog: Digits at Startup Grind Conference 2025](https://digits.com/blog/digits-at-startup-grind-conference-2025/)
 
 * [Digits Blog: Performance Improvements for Llama 4 Scout and vLLM](https://digits.com/blog/performance-improvements-llama4-scout/)
