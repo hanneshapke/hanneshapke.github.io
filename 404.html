@@ -1,15 +1,10 @@
 ---
-layout: page
+layout: default
 permalink: /404.html
 ---
 
-<div class="container">
-  <div class="row">
-    <div class="col col-12">
-      <div class="error">
-        <h2 class="error__title">404</h2>
-        <p class="error__text">The requested page could not be found.</p>
-      </div>
-    </div>
-  </div>
-</div>
+<section class="section" style="text-align:center;padding:4rem 0;">
+  <p style="font-family:var(--font-mono);color:var(--accent);font-size:.85rem;letter-spacing:.12em;text-transform:uppercase;">404 / not found</p>
+  <h1 style="font-size:2.25rem;margin:.5rem 0 1rem;">Page not found.</h1>
+  <p>Try the <a href="{{ '/' | relative_url }}">home page</a>, recent <a href="{{ '/writing/' | relative_url }}">writing</a>, or <a href="{{ '/talks/' | relative_url }}">talks</a>.</p>
+</section>

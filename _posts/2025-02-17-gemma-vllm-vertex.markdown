@@ -7,9 +7,6 @@ image:  '/images/speculative_decoding/speculative_decoding_comparison_header.jpg
 tags:   [machine learning,model deployment,vllm,gemma,mlops,llm]
 ---
 
-
-# Deploying Google's Gemma on Vertex AI: A Complete Guide
-
 In the rapidly evolving landscape of artificial intelligence, the ability to deploy and manage your own language models has become increasingly important. While hosted solutions like Google's Gemini offer convenience, there are compelling reasons to host your own models. Today, we'll explore how to deploy Google's Gemma model on Vertex AI, providing you with complete control over your AI infrastructure.
 
 ## Introduction

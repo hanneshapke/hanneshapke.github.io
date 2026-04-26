@@ -1,0 +1,32 @@
+---
+layout: page
+title: Writing
+permalink: /writing/
+nav_order: 1
+---
+
+<p class="lede">
+  Notes on production ML, MLOps, LLM inference, and the boring engineering
+  problems that decide whether a model ever ships. For posts on industry
+  blogs (Google Cloud, TensorFlow, Digits, etc.) see <a href="{{ '/blog/' | relative_url }}">elsewhere</a>.
+</p>
+
+{% assign posts_by_year = site.posts | group_by_exp: "p", "p.date | date: '%Y'" %}
+
+{% for year in posts_by_year %}
+<section class="year-group">
+  <h2>{{ year.name }}</h2>
+  <ul class="line-list">
+    {% for post in year.items %}
+      <li>
+        <span class="meta-date">{{ post.date | date: "%m-%d" }}</span>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        <span class="meta-tail">
+          {% assign w = post.content | number_of_words %}
+          {% if w < 360 %}1 min{% else %}{{ w | divided_by: 200 | ceil }} min{% endif %}
+        </span>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endfor %}

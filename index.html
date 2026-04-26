@@ -1,20 +1,108 @@
 ---
 layout: default
-image: '/images/01.jpg'
 ---
 
-{% include hero.html %}
+<section class="intro">
+  <p class="lede">
+    <strong>Hannes Hapke</strong> — ML Engineering Leader, co-author of four
+    O'Reilly and Manning books on machine learning, and Google Developer Expert.
+    I help organizations build ML systems that survive contact with production.
+  </p>
+</section>
 
-<div class="container">
-  <div class="row animate">
-    {% if site.posts.size > 0 %}
-      {% for post in paginator.posts %}
-        {% include article.html %}
-      {% endfor %}
-    {% endif %}
-  </div>
-</div>
+<section class="section">
+  <header class="section__head">
+    <h2 class="section__title">writing</h2>
+    <a class="section__more" href="{{ '/writing/' | relative_url }}">all →</a>
+  </header>
+  <ul class="line-list">
+    {% for post in site.posts limit: 6 %}
+      <li>
+        <span class="meta-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        <span class="meta-tail">
+          {% assign w = post.content | number_of_words %}
+          {% if w < 360 %}1 min{% else %}{{ w | divided_by: 200 | ceil }} min{% endif %}
+        </span>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
 
-{% include pagination.html %}
+<section class="section">
+  <header class="section__head">
+    <h2 class="section__title">books</h2>
+    <a class="section__more" href="{{ '/books/' | relative_url }}">details →</a>
+  </header>
+  <ul class="book-grid">
+    <li>
+      <span class="book__year">2025</span>
+      <a class="book__title" href="https://www.oreilly.com/library/view/generative-ai-design/9798341622654">Generative AI Design Patterns</a>
+      <span class="book__pub">O'Reilly · with Valliappa Lakshmanan</span>
+    </li>
+    <li>
+      <span class="book__year">2024</span>
+      <a class="book__title" href="https://www.oreilly.com/library/view/machine-learning-production/9781492092673/">Machine Learning Production Systems</a>
+      <span class="book__pub">O'Reilly · with Robert Crowe et al.</span>
+    </li>
+    <li>
+      <span class="book__year">2020</span>
+      <a class="book__title" href="https://www.oreilly.com/library/view/building-machine-learning/9781492052897/">Building Machine Learning Pipelines</a>
+      <span class="book__pub">O'Reilly · with Catherine Nelson</span>
+    </li>
+    <li>
+      <span class="book__year">2019</span>
+      <a class="book__title" href="https://www.manning.com/books/nlp-in-action">Natural Language Processing in Action</a>
+      <span class="book__pub">Manning</span>
+    </li>
+  </ul>
+</section>
 
-{% include section-tags.html %}
+<section class="section">
+  <header class="section__head">
+    <h2 class="section__title">recent talks</h2>
+    <a class="section__more" href="{{ '/talks/' | relative_url }}">all 40+ →</a>
+  </header>
+  <ul class="line-list">
+    <li>
+      <span class="meta-date">2025-11</span>
+      <span>OSU Supply Chain Council — ML in Supply Chain Management</span>
+      <span class="meta-tail">Portland</span>
+    </li>
+    <li>
+      <span class="meta-date">2025-10</span>
+      <span>GenAI Summit — Agents in Production</span>
+      <span class="meta-tail">Austin</span>
+    </li>
+    <li>
+      <span class="meta-date">2025-07</span>
+      <a href="https://www.aiinproduction.com/2025/speakers/hannes_hapke">AI in Production — Agents in Production</a>
+      <span class="meta-tail">Asheville</span>
+    </li>
+    <li>
+      <span class="meta-date">2025-02</span>
+      <a href="https://digits.com/blog/google-developer-group-seattle-talk-2025/">GDG Seattle — Private Gemma API on Vertex</a>
+      <span class="meta-tail">remote</span>
+    </li>
+    <li>
+      <span class="meta-date">2024-07</span>
+      <a href="https://www.aiinproduction.com/2024/speakers/hannes_hapke">AI in Production — Deploying LLMs with Ease</a>
+      <span class="meta-tail">Asheville</span>
+    </li>
+  </ul>
+</section>
+
+<section class="section">
+  <header class="section__head">
+    <h2 class="section__title">elsewhere</h2>
+  </header>
+  <ul class="line-list">
+    {% for s in site.social %}
+      <li>
+        <span class="meta-date">{{ s.name | downcase }}</span>
+        <a href="{{ s.link }}"{% if s.link contains '://' %} target="_blank" rel="noopener"{% endif %}>{{ s.link | replace: 'https://', '' | replace: 'http://', '' }}</a>
+        <span class="meta-tail"></span>
+      </li>
+    {% endfor %}
+  </ul>
+</section>

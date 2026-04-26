@@ -7,7 +7,6 @@ image:  '/images/speculative_decoding/gemma2-spec-encoding.png'
 tags:   [machine learning,model deployment,vllm,speculative decoding,mlops,llm,gemma]
 ---
 
-# Speculative Decoding with vLLM using Gemma
 When deploying large language models in production environments, latency optimization is crucial. This is particularly important for real-time applications like chatbots and conversational interfaces. While complex tasks often require larger LLMs (70 billion+ parameters), users still expect response times similar to smaller models. This challenge has led the machine learning community to continuously explore new ways to improve LLM latency.
 
 One of the most promising techniques is speculative decoding, which is a technique that improves the performance of a language model by predicting multiple tokens at a time with a smaller model and use a larger model to validate the predictions.
