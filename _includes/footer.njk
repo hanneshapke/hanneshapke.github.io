@@ -1,0 +1,10 @@
+<footer class="site-footer">
+  <div class="wrap site-footer__inner">
+    <div>&copy; {{ now.year }} {{ site.author.name }}</div>
+    <ul>
+      {% for s in site.social %}
+        <li><a href="{{ s.link }}"{% if "://" in s.link %} target="_blank" rel="noopener"{% endif %}>{{ s.name | lower }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</footer>

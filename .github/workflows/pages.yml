@@ -20,16 +20,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: ruby/setup-ruby@v1
+      - uses: actions/setup-node@v4
         with:
-          ruby-version: "3.2"
-          bundler-cache: true
+          node-version: "20"
+          cache: "npm"
+
+      - run: npm ci
 
       - uses: actions/configure-pages@v5
 
-      - run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
-        env:
-          JEKYLL_ENV: production
+      - run: npx @11ty/eleventy
 
       - uses: actions/upload-pages-artifact@v3
         with:

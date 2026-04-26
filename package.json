@@ -1,0 +1,16 @@
+{
+  "name": "hanneshapke-site",
+  "private": true,
+  "version": "1.0.0",
+  "description": "hanneshapke.com — Eleventy site",
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve",
+    "watch": "eleventy --watch",
+    "clean": "rm -rf _site"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "markdown-it": "^14.1.0"
+  }
+}

@@ -1,0 +1,12 @@
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a class="brand" href="/">{{ site.title | lower }}</a>
+    <nav class="nav" aria-label="Primary">
+      {% set u = page.url %}
+      <a href="/writing/"{% if u.indexOf("/writing") == 0 or layout == "post.njk" %} class="is-active"{% endif %}>writing</a>
+      <a href="/books/"{% if u.indexOf("/books") == 0 %} class="is-active"{% endif %}>books</a>
+      <a href="/talks/"{% if u.indexOf("/talks") == 0 %} class="is-active"{% endif %}>talks</a>
+      <a href="/about/"{% if u.indexOf("/about") == 0 %} class="is-active"{% endif %}>about</a>
+    </nav>
+  </div>
+</header>
