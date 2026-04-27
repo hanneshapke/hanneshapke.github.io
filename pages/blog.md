@@ -11,7 +11,7 @@ permalink: /blog/
 
 **Focus: Agentic AI at Dataiku, open source tooling**
 
-* [Dataiku Blog: Kiji Privacy Proxy](https://www.dataiku.com/stories/blog/kiji-privacy-proxy)
+* [Dataiku Blog: Kiji Privacy Proxy™ - Protecting Your Data in the Age of Generative AI](https://www.dataiku.com/stories/blog/kiji-privacy-proxy)
 
 * [Dataiku Blog: Dataiku's Agentic AI Foundation](https://www.dataiku.com/stories/blog/dataiku-agentic-ai-foundation)
 
