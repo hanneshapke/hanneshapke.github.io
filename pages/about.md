@@ -3,7 +3,7 @@ title: About
 permalink: /about/
 ---
 
-I'm a product-focused **ML Engineering Leader** and **bestselling author** who specializes in building open source machine learning tools that scale. I'm **Head of 575 Lab at Dataiku** — Dataiku's open source office — where I lead efforts to advance open source tooling around agents and LLMs. Previously, as the first ML engineer at Digits, I established the technical foundation for machine learning initiatives ranging from similarity learning to custom generative AI solutions, working alongside an exceptional team of engineers and designers.
+I'm a product-focused **ML Engineering Leader** and **technical author** who specializes in building open source machine learning tools that scale. I'm **Head of 575 Lab at Dataiku** — Dataiku's open source office — where I lead efforts to advance open source tooling around agents and LLMs. Previously, as the first ML engineer at Digits, I established the technical foundation for machine learning initiatives ranging from similarity learning to custom generative AI solutions, working alongside an exceptional team of engineers and designers.
 
 ## Core Expertise
 
