@@ -1,0 +1,125 @@
+---
+layout: base.njk
+permalink: /
+eleventyExcludeFromCollections: true
+---
+<section class="intro">
+  <p class="lede">
+    <strong>Hannes Hapke</strong> — ML Engineering Leader, co-author of four
+    O'Reilly and Manning books on machine learning, and Google Developer Expert.
+    I help organizations build ML systems that survive contact with production.
+  </p>
+</section>
+
+<section class="section">
+  <header class="section__head">
+    <h2 class="section__title">writing</h2>
+    <a class="section__more" href="/writing/">all →</a>
+  </header>
+  <ul class="line-list">
+    {% for post in collections.writing.slice(0, 6) %}
+      <li>
+        <span class="meta-date">{{ post.date | ymd }}</span>
+        <a href="{{ post.url }}">{{ post.data.title }}</a>
+        <span class="meta-tail">{{ post.templateContent | readingTime }}</span>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="section">
+  <header class="section__head">
+    <h2 class="section__title">projects</h2>
+    <a class="section__more" href="/projects/">all →</a>
+  </header>
+  <ul class="book-grid">
+    <li>
+      <span class="book__year">CLI · Rust</span>
+      <a class="book__title" href="https://getyaak.ai">yaak</a>
+      <span class="book__pub">Natural language → shell command, any provider</span>
+    </li>
+    <li>
+      <span class="book__year">Web · AI coach</span>
+      <a class="book__title" href="https://igniteconvo.co/">IgniteConvo</a>
+      <span class="book__pub">Practice dating until it feels natural</span>
+    </li>
+  </ul>
+</section>
+
+<section class="section">
+  <header class="section__head">
+    <h2 class="section__title">books</h2>
+    <a class="section__more" href="/books/">details →</a>
+  </header>
+  <ul class="book-grid">
+    <li>
+      <span class="book__year">2025</span>
+      <a class="book__title" href="https://www.oreilly.com/library/view/generative-ai-design/9798341622654">Generative AI Design Patterns</a>
+      <span class="book__pub">O'Reilly · with Valliappa Lakshmanan</span>
+    </li>
+    <li>
+      <span class="book__year">2024</span>
+      <a class="book__title" href="https://www.oreilly.com/library/view/machine-learning-production/9781492092673/">Machine Learning Production Systems</a>
+      <span class="book__pub">O'Reilly · with Robert Crowe et al.</span>
+    </li>
+    <li>
+      <span class="book__year">2020</span>
+      <a class="book__title" href="https://www.oreilly.com/library/view/building-machine-learning/9781492052897/">Building Machine Learning Pipelines</a>
+      <span class="book__pub">O'Reilly · with Catherine Nelson</span>
+    </li>
+    <li>
+      <span class="book__year">2019</span>
+      <a class="book__title" href="https://www.manning.com/books/nlp-in-action">Natural Language Processing in Action</a>
+      <span class="book__pub">Manning</span>
+    </li>
+  </ul>
+</section>
+
+<section class="section">
+  <header class="section__head">
+    <h2 class="section__title">recent talks</h2>
+    <a class="section__more" href="/talks/">all 40+ →</a>
+  </header>
+  <ul class="line-list">
+    <li>
+      <span class="meta-date">2026-03</span>
+      <a href="https://www.nvidia.com/gtc/session-catalog/sessions/gtc26-ex82365/">NVIDIA GTC — Explainable AI Agents for Manufacturing</a>
+      <span class="meta-tail">San Jose</span>
+    </li>
+    <li>
+      <span class="meta-date">2026-03</span>
+      <span>Portland Python Meetup — From a GitHub repo to a pip package</span>
+      <span class="meta-tail">Portland</span>
+    </li>
+    <li>
+      <span class="meta-date">2025-11</span>
+      <span>OSU Supply Chain Council — ML in Supply Chain Management</span>
+      <span class="meta-tail">Portland</span>
+    </li>
+    <li>
+      <span class="meta-date">2025-10</span>
+      <span>GenAI Summit — Agents in Production</span>
+      <span class="meta-tail">Austin</span>
+    </li>
+    <li>
+      <span class="meta-date">2025-07</span>
+      <a href="https://www.aiinproduction.com/2025/speakers/hannes_hapke">AI in Production — Agents in Production</a>
+      <span class="meta-tail">Asheville</span>
+    </li>
+  </ul>
+</section>
+
+<section class="section">
+  <header class="section__head">
+    <h2 class="section__title">elsewhere</h2>
+  </header>
+  <ul class="line-list">
+    {% for s in site.social %}
+      <li>
+        <span class="meta-date">{{ s.name | lower }}</span>
+        <a href="{{ s.link }}"{% if "://" in s.link %} target="_blank" rel="noopener"{% endif %}>{{ s.link | hostOnly }}</a>
+        <span class="meta-tail"></span>
+      </li>
+    {% endfor %}
+  </ul>
+</section>

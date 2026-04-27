@@ -1,0 +1,15 @@
+module.exports = {
+  title: "Hannes Hapke",
+  tagline:
+    "ML Engineering Leader · O'Reilly & Manning Author · Google Developer Expert",
+  description:
+    "Hannes Hapke — ML Engineering Leader, co-author of four O'Reilly and Manning books on machine learning, and Google Developer Expert. Writing on production ML, MLOps, and generative AI systems.",
+  url: "https://www.hanneshapke.com",
+  lang: "en",
+  author: { name: "Hannes Hapke" },
+  social: [
+    { name: "LinkedIn", link: "https://www.linkedin.com/in/hanneshapke/" },
+    { name: "GitHub", link: "https://github.com/hanneshapke" },
+    { name: "RSS", link: "/feed.xml" },
+  ],
+};

@@ -1,0 +1,27 @@
+---
+layout: base.njk
+---
+<article class="post">
+  <header class="page-head">
+    <h1>{{ title }}</h1>
+    <p class="meta">
+      <time datetime="{{ page.date | isoDate }}">{{ page.date | ymd }}</time>
+      <span class="dot">·</span>
+      {{ content | readingTime }} read
+    </p>
+  </header>
+
+  <div class="post-content">
+    {{ content | safe }}
+  </div>
+
+  {% if tags and tags.length %}
+  <div class="post-tags">
+    {% for tag in tags %}{% if tag != "post" %}<a class="post-tag" href="/tags/#{{ tag | slugify }}">{{ tag }}</a>{% endif %}{% endfor %}
+  </div>
+  {% endif %}
+
+  <nav class="post-nav">
+    <a href="/writing/">← all writing</a>
+  </nav>
+</article>

@@ -1,0 +1,6 @@
+_site/
+node_modules/
+.cache/
+.DS_Store
+npm-debug.log
+.eleventy.cache/

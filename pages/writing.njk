@@ -1,0 +1,30 @@
+---
+layout: base.njk
+title: Writing
+permalink: /writing/
+eleventyExcludeFromCollections: true
+---
+<header class="page-head">
+  <h1>Writing</h1>
+</header>
+
+<p class="lede">
+  Notes on production ML, MLOps, LLM inference, and the boring engineering
+  problems that decide whether a model ever ships. For posts on industry
+  blogs (Google Cloud, TensorFlow, Digits, etc.) see <a href="/blog/">elsewhere</a>.
+</p>
+
+{% for group in collections.writing | groupByYear %}
+<section class="year-group">
+  <h2>{{ group.year }}</h2>
+  <ul class="line-list">
+    {% for post in group.posts %}
+      <li>
+        <span class="meta-date">{{ post.date | md }}</span>
+        <a href="{{ post.url }}">{{ post.data.title }}</a>
+        <span class="meta-tail">{{ post.templateContent | readingTime }}</span>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endfor %}
