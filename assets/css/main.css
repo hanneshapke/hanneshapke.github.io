@@ -301,6 +301,18 @@ main { padding: 2.5rem 0 4rem; }
   .book-grid { grid-template-columns: 1fr; }
 }
 
+/* ----- project screenshots ----- */
+.project-shot {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 1.25rem 0;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  background: var(--bg-soft);
+}
+a:has(.project-shot) { border: none; }
+
 /* ----- post / page ----- */
 
 .page-head { margin-bottom: 2rem; }
