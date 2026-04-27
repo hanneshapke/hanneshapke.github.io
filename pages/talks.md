@@ -9,7 +9,13 @@ permalink: /talks/
 
 ## Upcoming Talks
 
-TBD
+* May 21, 2026: Dataiku Technology Kickoff (TKO) (Berlin, Germany) - Deep dive into Kiji Inspector (internal presentation)
+
+* June 1, 2026: [QCon Boston](https://qconferences.com/boston) (Boston, MA) - Deep dive into Kiji Inspector
+
+* June 15, 2026: [ICPRAI 2026](https://icprai2026.com/) (Montreal, Canada) - Opening the Black Box: Mechanistic Interpretability of Agent Tool Selection with Sparse Autoencoders (Poster Session)
+
+* July 15, 2026: SciPy 2026, University of Minnesota (Minneapolis, MN) - Opening the Black Box: Mechanistic Interpretability of Agent Tool Selection with Sparse Autoencoders (Poster Session)
 
 ## Past Talks
 
