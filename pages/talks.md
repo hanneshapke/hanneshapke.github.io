@@ -13,6 +13,13 @@ TBD
 
 ## Past Talks
 
+### 2026
+
+* March 26: Portland Python Meetup (Portland, OR) - From a Github repository to a pip package
+
+* March 16: NVIDIA GTC 2026 (San Jose, CA) - [Making AI Agents Explainable for Manufacturing at Scale With Dataiku and NVIDIA (Presented by Dataiku)](https://www.nvidia.com/gtc/session-catalog/sessions/gtc26-ex82365/)
+![NVIDIA GTC 2026](/images/gtc-2026.png)
+
 ### 2025
 
 * November 14: Oregon State University - Supply Chain Management Council (Portland, OR) - [Machine Learning in Supply Chain Management]

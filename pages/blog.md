@@ -7,6 +7,14 @@ permalink: /blog/
 
 ## Recent Blog Posts
 
+### 2026
+
+**Focus: Agentic AI at Dataiku, open source tooling**
+
+* [Dataiku Blog: Dataiku's Agentic AI Foundation](https://www.dataiku.com/stories/blog/dataiku-agentic-ai-foundation)
+
+* [Dataiku Blog: Introducing Kiji Inspector](https://www.dataiku.com/stories/blog/introducing-kiji-inspector)
+
 ### 2025
 
 **Focus: AI Startups, GenAI, and AI trends**
