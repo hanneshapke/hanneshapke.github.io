@@ -175,6 +175,7 @@ figcaption {
   font-weight: 600;
   border: none;
   letter-spacing: -0.01em;
+  padding-left: 1.5rem;
 }
 .brand::before { content: "~/"; color: var(--accent); }
 
@@ -328,7 +329,7 @@ a:has(.project-shot) { border: none; }
 
 /* ----- post / page ----- */
 
-.page-head { margin-bottom: 2rem; }
+.page-head { margin-top: 2rem; margin-bottom: 2rem; }
 .page-head h1 { margin: 0 0 0.5rem; font-size: 2rem; }
 .page-head .meta {
   font-family: var(--font-mono);
