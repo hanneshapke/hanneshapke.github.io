@@ -9,17 +9,19 @@ permalink: /talks/
 
 ## Upcoming Talks
 
-* May 21, 2026: Dataiku Technology Kickoff (TKO) (Berlin, Germany) - Deep dive into Kiji Inspector (internal presentation)
-
-* June 1, 2026: [QCon Boston](https://qconferences.com/boston) (Boston, MA) - Deep dive into Kiji Inspector
-
-* June 15, 2026: [ICPRAI 2026](https://icprai2026.com/) (Montreal, Canada) - Opening the Black Box: Mechanistic Interpretability of Agent Tool Selection with Sparse Autoencoders (Poster Session)
-
-* July 15, 2026: SciPy 2026, University of Minnesota (Minneapolis, MN) - Opening the Black Box: Mechanistic Interpretability of Agent Tool Selection with Sparse Autoencoders (Poster Session)
+* September 2, 2026: [API World 2026](https://apiworld.co/conference/) (Santa Clara, CA) - Are You in the Dark? How Open-Source Is Making AI Agent Decisions Explainable (AI TechWorld Expo Stage, 9:30–9:55 AM)
 
 ## Past Talks
 
 ### 2026
+
+* July 15: SciPy 2026, University of Minnesota (Minneapolis, MN) - Opening the Black Box: Mechanistic Interpretability of Agent Tool Selection with Sparse Autoencoders (Poster Session)
+
+* June 15: [ICPRAI 2026](https://icprai2026.com/) (Montreal, Canada) - Opening the Black Box: Mechanistic Interpretability of Agent Tool Selection with Sparse Autoencoders (Poster Session)
+
+* June 1: [QCon Boston](https://qconferences.com/boston) (Boston, MA) - Deep dive into Kiji Inspector
+
+* May 21: Dataiku Technology Kickoff (TKO) (Berlin, Germany) - Deep dive into Kiji Inspector (internal presentation)
 
 * March 26: Portland Python Meetup (Portland, OR) - From a Github repository to a pip package
 
