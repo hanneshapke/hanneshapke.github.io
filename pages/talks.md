@@ -9,11 +9,17 @@ permalink: /talks/
 
 ## Upcoming Talks
 
-* September 2, 2026: [API World 2026](https://apiworld.co/conference/) (Santa Clara, CA) - Are You in the Dark? How Open-Source Is Making AI Agent Decisions Explainable (AI TechWorld Expo Stage, 9:30–9:55 AM)
+* November 18–19, 2026: [GenAI Summit 2026](https://mlopsworld.com/) (Austin, TX)
 
 ## Past Talks
 
 ### 2026
+
+* September 29: Dataiku Summit (Paris, France)
+
+* September 24: Dataiku Succeed (New York, NY)
+
+* September 2: [API World 2026](https://apiworld.co/conference/) (Santa Clara, CA) - Are You in the Dark? How Open-Source Is Making AI Agent Decisions Explainable (AI TechWorld Expo Stage)
 
 * July 15: SciPy 2026, University of Minnesota (Minneapolis, MN) - Opening the Black Box: Mechanistic Interpretability of Agent Tool Selection with Sparse Autoencoders (Poster Session)
 

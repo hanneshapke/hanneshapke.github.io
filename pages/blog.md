@@ -11,6 +11,16 @@ permalink: /blog/
 
 **Focus: Agentic AI at Dataiku, open source tooling**
 
+* [TechVoices: Open Weights Aren't the Threat. Concentration Is.](https://techvoices.com/viewpoints/open-weights-arent-the-threat-concentration-is)
+
+* [Dataiku Tech Blog: DGX Spark Setup Guide: Remote Access, Tailscale & Ollama](https://www.dataiku.com/tech-blog/day-one-with-the-nvidia-dgx-spark)
+
+* [Dataiku Tech Blog: Clustering Two DGX Sparks: Fixing the 26 Gbps Link Mystery](https://www.dataiku.com/tech-blog/two-nvidia-dgx-sparks-one-cluster)
+
+* [Dataiku Tech Blog: Running GLM-5.2 (744B) on Two DGX Sparks with llama.cpp](https://www.dataiku.com/tech-blog/running-glm-5-2-on-two-nvidia-dgx-sparks)
+
+* [Dataiku Tech Blog: Run Dataiku AI on Local LLMs with Two NVIDIA DGX Sparks](https://www.dataiku.com/tech-blog/dataiku-using-a-local-glm-5-3-flash)
+
 * [Dataiku Blog: Kiji Privacy Proxy™ - Protecting Your Data in the Age of Generative AI](https://www.dataiku.com/stories/blog/kiji-privacy-proxy)
 
 * [Dataiku Blog: Dataiku's Agentic AI Foundation](https://www.dataiku.com/stories/blog/dataiku-agentic-ai-foundation)
