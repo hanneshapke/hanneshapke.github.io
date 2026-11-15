@@ -3,6 +3,9 @@ name: Build and deploy site
 on:
   push:
     branches: [main]
+  # Daily rebuild so talks that have happened drop off "upcoming talks".
+  schedule:
+    - cron: "0 9 * * *"
   workflow_dispatch:
 
 permissions:

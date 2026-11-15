@@ -34,14 +34,14 @@ eleventyExcludeFromCollections: true
   </header>
   <ul class="book-grid">
     <li>
+      <span class="book__year">Agents · Rust</span>
+      <a class="book__title" href="https://getcedar.io">Cedar</a>
+      <span class="book__pub">Your own AI assistant, running at home</span>
+    </li>
+    <li>
       <span class="book__year">CLI · Rust</span>
       <a class="book__title" href="https://getyaak.ai">yaak</a>
       <span class="book__pub">Natural language → shell command, any provider</span>
-    </li>
-    <li>
-      <span class="book__year">Web · AI coach</span>
-      <a class="book__title" href="https://igniteconvo.co/">IgniteConvo</a>
-      <span class="book__pub">Practice dating until it feels natural</span>
     </li>
   </ul>
 </section>
@@ -74,6 +74,25 @@ eleventyExcludeFromCollections: true
     </li>
   </ul>
 </section>
+
+{% if upcomingTalks.length %}
+<section class="section">
+  <header class="section__head">
+    <h2 class="section__title">upcoming talks</h2>
+    <a class="section__more" href="/talks/">details →</a>
+  </header>
+  <ul class="line-list">
+    {% for t in upcomingTalks %}
+      <li>
+        <span class="meta-date">{{ t.date }}</span>
+        {% set label = t.event + (" — " + t.title if t.title else "") %}
+        {% if t.url %}<a href="{{ t.url }}">{{ label }}</a>{% else %}<span>{{ label }}</span>{% endif %}
+        <span class="meta-tail">{{ t.location }}</span>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
 
 <section class="section">
   <header class="section__head">

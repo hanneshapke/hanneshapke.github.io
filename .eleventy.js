@@ -27,6 +27,15 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("md", (d) =>
     new Date(d).toISOString().slice(5, 10),
   );
+  // "2026-11-17" → "November 17, 2026" (date-only strings, read as UTC).
+  eleventyConfig.addFilter("longDate", (d) =>
+    new Date(d).toLocaleDateString("en-US", {
+      month: "long",
+      day: "numeric",
+      year: "numeric",
+      timeZone: "UTC",
+    }),
+  );
   eleventyConfig.addFilter("year", (d) => new Date(d).getUTCFullYear());
 
   eleventyConfig.addFilter("wordCount", (content) => {

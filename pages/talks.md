@@ -7,9 +7,14 @@ permalink: /talks/
 
 ---
 
+{% if upcomingTalks.length %}
 ## Upcoming Talks
 
-* November 18–19, 2026: [GenAI Summit 2026](https://mlopsworld.com/) (Austin, TX)
+{% for t in upcomingTalks %}
+* {{ t.date | longDate }}{% if t.endDate %}–{{ t.endDate | longDate }}{% endif %}: {% if t.url %}[{{ t.event }}]({{ t.url }}){% else %}{{ t.event }}{% endif %} ({{ t.location }}){% if t.title %} - {{ t.title }}{% endif %}{% if t.image %}
+![{{ t.event }} speaker card]({{ t.image }}){% endif %}
+{% endfor %}
+{% endif %}
 
 ## Past Talks
 
